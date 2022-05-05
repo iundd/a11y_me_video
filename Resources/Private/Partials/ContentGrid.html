@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:switch expression="{data.tx_a11ymevideo_videowidth}">
+    <f:case value="1">
+        <f:comment>video width: 50%</f:comment>
+        {f:variable(name: 'videoColClasses', value: 'a11y-me-col-lg-6 a11y-me-col-video')}
+        {f:variable(name: 'textColClasses', value: 'a11y-me-col-lg-6 a11y-me-col-text')}
+    </f:case>
+    <f:defaultCase>
+        <f:comment>video width: 100%</f:comment>
+        {f:variable(name: 'videoColClasses', value: 'a11y-me-col-lg-12 a11y-me-col-video')}
+        {f:variable(name: 'textColClasses', value: 'a11y-me-col-lg-12 a11y-me-col-text')}
+    </f:defaultCase>
+</f:switch>
+<div class="a11y-me-row">
+    <f:switch expression="{data.tx_a11ymevideo_videoposition}">
+        <f:case value="1">
+            <f:comment>video position: above</f:comment>
+            <div class="{videoColClasses}">
+                <f:render partial="VideoBody" arguments="{_all}"/>
+            </div>
+            <f:if condition="{data.bodytext}">
+                <div class="col-12 a11y-me-mt-4">
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </div>
+            </f:if>
+        </f:case>
+        <f:case value="2">
+            <f:comment>video position: left</f:comment>
+            <div class="{videoColClasses}">
+                <f:render partial="VideoBody" arguments="{_all}"/>
+            </div>
+            <f:if condition="{data.bodytext}">
+                <div class="{textColClasses} a11y-me-mt-4 a11y-me-mt-lg-0">
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </div>
+            </f:if>
+        </f:case>
+        <f:case value="3">
+            <f:comment>video position: right</f:comment>
+            <f:if condition="{data.bodytext}">
+                <f:then>
+                    <div class="{textColClasses} a11y-me-mb-4 a11y-me-mb-lg-0">
+                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                    </div>
+                </f:then>
+                <f:else>
+                    <div class="{textColClasses}"></div>
+                </f:else>
+            </f:if>
+            <div class="{videoColClasses}">
+                <f:render partial="VideoBody" arguments="{_all}"/>
+            </div>
+        </f:case>
+        <f:defaultCase>
+            <f:comment>video position: below</f:comment>
+            <f:if condition="{data.bodytext}">
+                <div class="col-12 mb-4">
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </div>
+            </f:if>
+            <div class="{videoColClasses}">
+                <f:render partial="VideoBody" arguments="{_all}"/>
+            </div>
+        </f:defaultCase>
+    </f:switch>
+</div>
+</html>

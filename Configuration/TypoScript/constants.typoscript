@@ -1,0 +1,8 @@
+# cat=a11y_me_video/file; type=string; label=Path to template root (FE)
+plugin.tx_a11ymevideo.view.templateRootPath =
+
+# cat=a11y_me_video/file; type=string; label=Path to template partials (FE)
+plugin.tx_a11ymevideo.view.partialRootPath =
+
+# cat=a11y_me_video/file; type=string; label=Path to template layouts (FE)
+plugin.tx_a11ymevideo.view.layoutRootPath =

@@ -1,0 +1,40 @@
+{
+    "name": "iundd/a11y-me-video",
+    "description": "Accessible video player based on MediaElement.js, A11y Plugin and Fluid. The new content elements support mp4, webm, subtitles, sign language video, audio description, poster image, text alternative, etc.",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "Video Player",
+        "Video",
+        "Accessibility",
+        "Content Elements"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Robert Pudenz",
+            "email": "opensource@i-d.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-backend": "^10.4 || ^11.5",
+        "typo3/cms-core": "^10.4 || ^11.5",
+        "typo3/cms-extbase": "^10.4 || ^11.5",
+        "typo3/cms-fluid": "^10.4 || ^11.5",
+        "typo3/cms-frontend": "^10.4 || ^11.5"
+    },
+    "replace": {
+        "typo3-ter/a11y-me-video": "0.9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "iundd\\A11yMeVideo\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "a11y_me_video"
+        }
+    }
+}

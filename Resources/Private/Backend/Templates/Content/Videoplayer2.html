@@ -1,0 +1,68 @@
+<h6>[ <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer2_title" /> ]</h6>
+
+<f:format.html parseFuncTSPath="lib.parseFunc_RTE">{row.bodytext}</f:format.html>
+
+<div style="border-top:1px solid #999"><br></div>
+<div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg"/>:</strong></div>
+<div>
+    <f:if condition="{processedRow.tx_a11ymevideo_posterimg}">
+        <f:for each="{processedRow.tx_a11ymevideo_posterimg}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <f:image src="{file.uid}" width="150" />
+            </f:for>
+        </f:for>
+    </f:if>
+</div>
+
+<br>
+
+<f:if condition="{processedRow.tx_a11ymevideo_mp4link}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4link" />:</strong></div>
+    <ul type="none">
+        <li>
+            {f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_mp4link}')}
+        </li>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_webmlink}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webmlink" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_webmlink}')}</li>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_captionslink}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captionslink" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_captionslink}')}</li>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_signlanguagelink}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_signlanguagelink}')}</li>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_signlanguagelink_webm}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_webm" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_signlanguagelink_webm}')}</li>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_audiodescriptionlink}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescriptionlink" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_audiodescriptionlink}')}</li>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_fulltextalternative}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_fulltextalternative}')}</li>
+    </ul>
+</f:if>

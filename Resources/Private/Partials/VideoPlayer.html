@@ -1,0 +1,103 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="a11y-me-videoplayer">
+    <video controls playsinline  width="1180" height="664" preload="metadata" lang='{langCode}'
+        <f:if condition="{data_tx_a11ymevideo_posterimg}">poster="{data_tx_a11ymevideo_posterimg.0.publicUrl}"</f:if>
+        <f:if condition="{data_tx_a11ymevideo_signlanguage}">
+            <f:if condition="{data_tx_a11ymevideo_signlanguage_webm}">
+                <f:then>
+                    data-video-description='[
+                    { "src": "<f:format.raw>{data_tx_a11ymevideo_signlanguage.0.publicUrl}</f:format.raw>", "type": "video/mp4" },
+                    { "src": "<f:format.raw>{data_tx_a11ymevideo_signlanguage_webm.0.publicUrl}</f:format.raw>", "type": "video/webm" }
+                    ]'
+                </f:then>
+                <f:else>
+                    data-video-description='[{"src": "<f:format.raw>{data_tx_a11ymevideo_signlanguage.0.publicUrl}</f:format.raw>", "type": "video/mp4"}]'
+                </f:else>
+            </f:if>
+        </f:if>
+        <f:if condition="{data_tx_a11ymevideo_audiodescription}">
+            data-audio-description='[{"src": "<f:format.raw>{data_tx_a11ymevideo_audiodescription.0.publicUrl}</f:format.raw>", "type": "audio/mp3"}]'
+        </f:if>
+    >
+    <f:if condition="{data_tx_a11ymevideo_mp4}">
+        <f:for each="{data_tx_a11ymevideo_mp4}" as="file">
+            <source src="{file.publicUrl}" type="video/mp4">
+        </f:for>
+    </f:if>
+    <f:if condition="{data_tx_a11ymevideo_webm}">
+        <f:for each="{data_tx_a11ymevideo_webm}" as="file">
+            <source src="{file.publicUrl}" type="video/webm">
+        </f:for>
+    </f:if>
+    <f:if condition="{data_tx_a11ymevideo_captions}">
+        <f:for each="{data_tx_a11ymevideo_captions}" as="file">
+            <track kind="subtitles" src="{file.publicUrl}" srclang="{langCode}" label="{f:translate(key:'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:subtitles.label')}"/>
+        </f:for>
+    </f:if>
+    </video>
+</div>
+
+<f:if condition="{data.tx_a11ymevideo_fulltextalternative} || ({data.tx_a11ymevideo_videooptions}==1)">
+    <ul class="a11y-me-linklist">
+        <f:if condition="{data.tx_a11ymevideo_fulltextalternative}">
+            <li>
+                <f:link.typolink parameter="{data.tx_a11ymevideo_fulltextalternative}">
+                    <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:fulltext.alternative"/>
+                </f:link.typolink>
+            </li>
+        </f:if>
+        <f:if condition="{data.tx_a11ymevideo_videooptions}==1">
+            <f:if condition="{data_tx_a11ymevideo_mp4}">
+                <f:for each="{data_tx_a11ymevideo_mp4}" as="file">
+                    <li>
+                        <a href="{file.publicUrl}" target="_blank">
+                            <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.video"/>
+                            (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.mp4"/>, <f:format.bytes>{file.size}</f:format.bytes>)
+                        </a>
+                    </li>
+                </f:for>
+            </f:if>
+            <f:if condition="{data_tx_a11ymevideo_webm}">
+                <f:for each="{data_tx_a11ymevideo_webm}" as="file">
+                    <li>
+                        <a href="{file.publicUrl}" target="_blank">
+                            <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.video"/>
+                            (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.webm"/>, <f:format.bytes>{file.size}</f:format.bytes>)
+                        </a>
+                    </li>
+                </f:for>
+            </f:if>
+            <f:if condition="{data_tx_a11ymevideo_captions}">
+                <f:for each="{data_tx_a11ymevideo_captions}" as="file">
+                    <li>
+                        <a href="{file.publicUrl}" target="_blank">
+                            <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.subtitles"/>
+                            (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.vtt"/>, <f:format.bytes>{file.size}</f:format.bytes>)
+                        </a>
+                    </li>
+                </f:for>
+            </f:if>
+            <f:if condition="{data_tx_a11ymevideo_signlanguage}">
+                <f:for each="{data_tx_a11ymevideo_signlanguage}" as="file">
+                    <li>
+                        <a href="{file.publicUrl}" target="_blank">
+                            <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.sign.language"/>
+                            (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.mp4"/>, <f:format.bytes>{file.size}</f:format.bytes>)
+                        </a>
+                    </li>
+                </f:for>
+            </f:if>
+            <f:if condition="{data_tx_a11ymevideo_signlanguage_webm}">
+                <f:for each="{data_tx_a11ymevideo_signlanguage_webm}" as="file">
+                    <li>
+                        <a href="{file.publicUrl}" target="_blank">
+                            <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.sign.language"/>
+                            (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.webm"/>, <f:format.bytes>{file.size}</f:format.bytes>)
+                        </a>
+                    </li>
+                </f:for>
+            </f:if>
+        </f:if>
+    </ul>
+</f:if>
+</html>

@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{data.header_layout} != 100">
+    <f:if condition="{data.header} || {data.subheader} || {data.date}">
+        <header{f:if(condition: '{data.tx_a11ymevideo_header_visibility} == 1', then: ' class="sr-only"')}>
+            <f:render partial="Header" arguments="{
+                header: data.header,
+                layout: data.header_layout,
+                positionClass: '{f:if(condition: data.header_position, then: \'ce-headline-{data.header_position}\')}',
+                link: data.header_link,
+                default: defaultHeaderType}" />
+            <f:render partial="SubHeader" arguments="{
+                subheader: data.subheader,
+                layout: data.header_layout,
+                positionClass: '{f:if(condition: data.header_position, then: \'ce-headline-{data.header_position}\')}',
+                default: defaultHeaderType}" />
+            <f:render partial="Date" arguments="{
+                date: data.date,
+                positionClass: '{f:if(condition: data.header_position, then: \'ce-headline-{data.header_position}\')}'}" />
+        </header>
+    </f:if>
+</f:if>
+</html>

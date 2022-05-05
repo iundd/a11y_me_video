@@ -1,0 +1,90 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="a11y-me-videoplayer">
+    <video controls playsinline  width="1180" height="664" preload="metadata" lang="{langCode}"
+        <f:if condition="{data_tx_a11ymevideo_posterimg}">poster="{data_tx_a11ymevideo_posterimg.0.publicUrl}"</f:if>
+        <f:if condition="{data.tx_a11ymevideo_signlanguagelink}">
+            <f:variable name="signlanguage" value="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_signlanguagelink}')}" />
+            <f:if condition="{data.tx_a11ymevideo_signlanguagelink_webm}">
+                <f:then>
+                    <f:variable name="signlanguage_webm" value="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_signlanguagelink_webm}')}" />
+                    data-video-description='[
+                    { "src": "<f:format.raw>{signlanguage}</f:format.raw>", "type": "video/mp4" },
+                    { "src": "<f:format.raw>{signlanguage_webm}</f:format.raw>", "type": "video/webm" }
+                    ]'
+                </f:then>
+                <f:else>
+                    data-video-description='[{ "src": "<f:format.raw>{signlanguage}</f:format.raw>", "type": "video/mp4" }]'
+                </f:else>
+            </f:if>
+        </f:if>
+        <f:if condition="{data.tx_a11ymevideo_audiodescriptionlink}">
+            <f:variable name="audiodescriptionlink" value="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_audiodescriptionlink}')}" />
+            data-audio-description='[{ "src": "<f:format.raw>{audiodescriptionlink}</f:format.raw>", "type": "audio/mp3" }]'
+        </f:if>
+    >
+    <f:if condition="{data.tx_a11ymevideo_mp4link}">
+        <source src="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_mp4link}')}" type="video/mp4">
+    </f:if>
+    <f:if condition="{data.tx_a11ymevideo_webmlink}">
+        <source src="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_webmlink}')}" type="video/webm">
+    </f:if>
+    <f:if condition="{data.tx_a11ymevideo_captionslink}">
+        <track kind="subtitles" src="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_captionslink}')}" srclang="{langCode}" label="{f:translate(key:'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:subtitles.label')}"/>
+    </f:if>
+    </video>
+</div>
+
+<f:if condition="{data.tx_a11ymevideo_fulltextalternative} || ({data.tx_a11ymevideo_videooptions}==1)">
+    <ul class="a11y-me-linklist">
+        <f:if condition="{data.tx_a11ymevideo_fulltextalternative}">
+            <li>
+                <f:link.typolink parameter="{data.tx_a11ymevideo_fulltextalternative}">
+                    <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:fulltext.alternative"/>
+                </f:link.typolink>
+            </li>
+        </f:if>
+        <f:if condition="{data.tx_a11ymevideo_videooptions}==1">
+            <f:if condition="{data.tx_a11ymevideo_mp4link}">
+                <li>
+                    <f:link.typolink parameter="{data.tx_a11ymevideo_mp4link}">
+                        <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.video"/>
+                        (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.mp4"/>)
+                    </f:link.typolink>
+                </li>
+            </f:if>
+            <f:if condition="{data.tx_a11ymevideo_webmlink}">
+                <li>
+                    <f:link.typolink parameter="{data.tx_a11ymevideo_webmlink}">
+                        <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.video"/>
+                        (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.webm"/>)
+                    </f:link.typolink>
+                </li>
+            </f:if>
+            <f:if condition="{data.tx_a11ymevideo_captionslink}">
+                <li>
+                    <f:link.typolink parameter="{data.tx_a11ymevideo_captionslink}">
+                        <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.subtitles"/>
+                        (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.vtt"/>)
+                    </f:link.typolink>
+                </li>
+            </f:if>
+            <f:if condition="{data.tx_a11ymevideo_signlanguagelink}">
+                <li>
+                    <f:link.typolink parameter="{data.tx_a11ymevideo_signlanguagelink}">
+                        <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.sign.language"/>
+                        (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.mp4"/>)
+                    </f:link.typolink>
+                </li>
+            </f:if>
+            <f:if condition="{data.tx_a11ymevideo_signlanguagelink_webm}">
+                <li>
+                    <f:link.typolink parameter="{data.tx_a11ymevideo_signlanguagelink_webm}">
+                        <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.sign.language"/>
+                        (<f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang.xlf:download.file.webm"/>)
+                    </f:link.typolink>
+                </li>
+            </f:if>
+        </f:if>
+    </ul>
+</f:if>
+</html>

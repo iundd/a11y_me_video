@@ -1,0 +1,91 @@
+<h6>[ <f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer_title" /> ]</h6>
+
+<f:format.html parseFuncTSPath="lib.parseFunc_RTE">{row.bodytext}</f:format.html>
+
+<div style="border-top:1px solid #999"><br></div>
+
+<div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg"/>:</strong></div>
+<div>
+    <f:if condition="{processedRow.tx_a11ymevideo_posterimg}">
+        <f:for each="{processedRow.tx_a11ymevideo_posterimg}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <f:image src="{file.uid}" width="150" />
+            </f:for>
+        </f:for>
+    </f:if>
+</div>
+
+<br>
+
+<f:if condition="{processedRow.tx_a11ymevideo_mp4}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4" />:</strong></div>
+    <ul type="none">
+        <f:for each="{processedRow.tx_a11ymevideo_mp4}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <li>{file.title}</li>
+            </f:for>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_webm}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webm" />:</strong></div>
+    <ul type="none">
+        <f:for each="{processedRow.tx_a11ymevideo_webm}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <li>{file.title}</li>
+            </f:for>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_captions}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captions" />:</strong></div>
+    <ul type="none">
+        <f:for each="{processedRow.tx_a11ymevideo_captions}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <li>{file.title}</li>
+            </f:for>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_signlanguage}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage" />:</strong></div>
+    <ul type="none">
+        <f:for each="{processedRow.tx_a11ymevideo_signlanguage}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <li>{file.title}</li>
+            </f:for>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_signlanguage_webm}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_webm" />:</strong></div>
+    <ul type="none">
+        <f:for each="{processedRow.tx_a11ymevideo_signlanguage_webm}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <li>{file.title}</li>
+            </f:for>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_audiodescription}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescription" />:</strong></div>
+    <ul type="none">
+        <f:for each="{processedRow.tx_a11ymevideo_audiodescription}" as="item">
+            <f:for each="{item.uid_local}" as="file">
+                <li>{file.title}</li>
+            </f:for>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{processedRow.tx_a11ymevideo_fulltextalternative}">
+    <div><strong><f:translate key="LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative" />:</strong></div>
+    <ul type="none">
+        <li>{f:uri.typolink(parameter:'{processedRow.tx_a11ymevideo_fulltextalternative}')}</li>
+    </ul>
+</f:if>

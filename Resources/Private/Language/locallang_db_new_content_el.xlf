@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2022-04-27T17:23:42+00:00" product-name="a11y_me_video">
+    <header/>
+    <body>
+      <trans-unit id="wizards.newContentElement.videoplayer_title">
+        <source>A11y Video Player &amp; Text</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.videoplayer_description">
+        <source>Accessible video player (local file recources)</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.videoplayer2_title">
+        <source>A11y Video Player &amp; Text (linked file resources)</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.videoplayer2_description">
+        <source>Accessible video player. The player uses linked file resources, for example external links.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

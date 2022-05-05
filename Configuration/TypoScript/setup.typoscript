@@ -1,0 +1,106 @@
+tt_content.a11ymevideo_videoplayer = FLUIDTEMPLATE
+tt_content.a11ymevideo_videoplayer {
+    layoutRootPaths.0 = EXT:a11y_me_video/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_a11ymevideo.view.layoutRootPath}
+    partialRootPaths.0 = EXT:a11y_me_video/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_a11ymevideo.view.partialRootPath}
+    templateRootPaths.0 = EXT:a11y_me_video/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_a11ymevideo.view.templateRootPath}
+    templateName = Videoplayer
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_a11ymevideo_posterimg
+        references {
+            fieldName = tx_a11ymevideo_posterimg
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_posterimg
+    }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.20 {
+        if.isTrue.field = tx_a11ymevideo_mp4
+        references {
+            fieldName = tx_a11ymevideo_mp4
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_mp4
+    }
+    dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.30 {
+        if.isTrue.field = tx_a11ymevideo_webm
+        references {
+            fieldName = tx_a11ymevideo_webm
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_webm
+    }
+    dataProcessing.40 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.40 {
+        if.isTrue.field = tx_a11ymevideo_captions
+        references {
+            fieldName = tx_a11ymevideo_captions
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_captions
+    }
+    dataProcessing.50 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.50 {
+        if.isTrue.field = tx_a11ymevideo_signlanguage
+        references {
+            fieldName = tx_a11ymevideo_signlanguage
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_signlanguage
+    }
+    dataProcessing.60 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.60 {
+        if.isTrue.field = tx_a11ymevideo_signlanguage_webm
+        references {
+            fieldName = tx_a11ymevideo_signlanguage_webm
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_signlanguage_webm
+    }
+    dataProcessing.70 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.70 {
+        if.isTrue.field = tx_a11ymevideo_audiodescription
+        references {
+            fieldName = tx_a11ymevideo_audiodescription
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_audiodescription
+    }
+
+    variables {
+        langIso = TEXT
+        langIso.data = siteLanguage:twoLetterIsoCode
+        defaultHeaderType = TEXT
+        defaultHeaderType.value = 2
+    }
+}
+tt_content.a11ymevideo_videoplayer2 = FLUIDTEMPLATE
+tt_content.a11ymevideo_videoplayer2 {
+    layoutRootPaths.0 = EXT:a11y_me_video/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_a11ymevideo.view.layoutRootPath}
+    partialRootPaths.0 = EXT:a11y_me_video/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_a11ymevideo.view.partialRootPath}
+    templateRootPaths.0 = EXT:a11y_me_video/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_a11ymevideo.view.templateRootPath}
+    templateName = Videoplayer2
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_a11ymevideo_posterimg
+        references {
+            fieldName = tx_a11ymevideo_posterimg
+            table = tt_content
+        }
+        as = data_tx_a11ymevideo_posterimg
+    }
+
+    variables {
+        langIso = TEXT
+        langIso.data = siteLanguage:twoLetterIsoCode
+        defaultHeaderType = TEXT
+        defaultHeaderType.value = 2
+    }
+}

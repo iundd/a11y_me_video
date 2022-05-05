@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de"  datatype="plaintext" original="messages" date="2022-04-27T18:55:01+00:00" product-name="a11y_me_video">
+    <header/>
+    <body>
+      <trans-unit id="tt_content.tx_a11ymevideo_audiodescription">
+        <source>Audio description | mp3</source>
+        <target>Audiodeskription | mp3</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_audiodescriptionlink">
+        <source>Audio description | mp3</source>
+        <target>Audiodeskription | mp3</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_captions">
+        <source>Caption file | vtt</source>
+        <target>Untertitel-Datei | vtt</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_captionslink">
+        <source>Caption file | vtt</source>
+        <target>Untertitel-Datei | vtt</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_fulltextalternative">
+        <source>Text alternative</source>
+        <target>Text-Alternative</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_header_visibility">
+        <source>Header visibility</source>
+        <target>Sichtbarkeit Überschrift</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language">
+        <source>Language (controls, subtitels)</source>
+        <target>Sprache (Bedienelemente, Untertitel)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_mp4">
+        <source>Main video | mp4</source>
+        <target>Haupt-Video | mp4</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_mp4link">
+        <source>Main video | mp4</source>
+        <target>Haupt-Video | mp4</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_posterimg">
+        <source>Poster image</source>
+        <target>Posterbild</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguage">
+        <source>Video with sign language | mp4</source>
+        <target>Video mit Gebärdensprache | mp4</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguage_webm">
+        <source>Video with sign language | webm</source>
+        <target>Video mit Gebärdensprache | webm</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguagelink">
+        <source>Video with sign language | mp4</source>
+        <target>Video mit Gebärdensprache | mp4</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguagelink_webm">
+        <source>Video with sign language | webm</source>
+        <target>Video mit Gebärdensprache | webm</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videooptions">
+        <source>Options</source>
+        <target>Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videoposition">
+        <source>Video position</source>
+        <target>Video-Position</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videowidth">
+        <source>Video width</source>
+        <target>Video-Breite</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_webm">
+        <source>Main video | webm</source>
+        <target>Hauptvideo | webm</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_webmlink">
+        <source>Main video | webm</source>
+        <target>Hauptvideo | webm</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_header_visibility.I.0">
+        <source>Visible for all</source>
+        <target>Sichtbar für alle</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_header_visibility.I.1">
+        <source>Readable for screen readers only</source>
+        <target>Nur lesbar für Screenreader</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.0">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.1">
+        <source>English</source>
+        <target>Englisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.2">
+        <source>French</source>
+        <target>Französisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.3">
+        <source>German</source>
+        <target>Deutsch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.4">
+        <source>Spanish</source>
+        <target>Spanisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.5">
+        <source>Catalan</source>
+        <target>Katalanisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.6">
+        <source>Chinese (Traditional)</source>
+        <target>Chinesisch (Traditionell)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.7">
+        <source>Chinese (Simplified)</source>
+        <target>Chinesisch (Vereinfacht)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.8">
+        <source>Croatian</source>
+        <target>Kroatisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.9">
+        <source>Czech</source>
+        <target>Tschechisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.10">
+        <source>Dutch</source>
+        <target>Niederländisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.11">
+        <source>Hungarian</source>
+        <target>Ungarisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.12">
+        <source>Italian</source>
+        <target>Italienisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.13">
+        <source>Japanese</source>
+        <target>Japanisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.14">
+        <source>Korean</source>
+        <target>Koreanisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.15">
+        <source>Malay</source>
+        <target>Malaysisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.16">
+        <source>Persian</source>
+        <target>Persisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.17">
+        <source>Polish</source>
+        <target>Polnisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.18">
+        <source>Portuguese</source>
+        <target>Portugiesisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.19">
+        <source>Romanian</source>
+        <target>Rumänisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.20">
+        <source>Russian</source>
+        <target>Russisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.21">
+        <source>Slovak</source>
+        <target>Slovakisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.22">
+        <source>Swedish</source>
+        <target>Schwedisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.23">
+        <source>Turkish</source>
+        <target>Türkisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.24">
+        <source>Ukrainian</source>
+        <target>Ukrainisch</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videooptions.I.0">
+        <source>Add links for video download</source>
+        <target>Video-Download-Links hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.0">
+        <source>left</source>
+        <target>links</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.1">
+        <source>right</source>
+        <target>rechts</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.2">
+        <source>below</source>
+        <target>unterhalb</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.3">
+        <source>below</source>
+        <target>oberhalb</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videowidth.I.0">
+        <source>50%</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videowidth.I.1">
+        <source>100%</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.div._a11ymevideo_">
+        <source>a11y_me_video</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.a11ymevideo_videoplayer">
+        <source>A11y Video Player &amp; Text</source>
+        <target>A11y Videplayer &amp; Text</target>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.a11ymevideo_videoplayer2">
+        <source>A11y Video Player &amp; Text (linked file resources)</source>
+        <target>A11y Videoplayer &amp; Text (verlinkte Datei-Resourcen)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_audiodescription_description">
+        <source>Audio file in mp3 format. Used as an alternate audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
+        <target>Audiodatei im mp3-Format. Wird als alternative Tonspur verwendet. (Die Audiodeskription enthält den Originalton und zusätzlichen Text, der von einem Sprecher gesprochen wird. Sprach- und Audiolücken können verwendet werden, um wichtige visuelle Informationen für blinde und sehbehinderte Menschen zu beschreiben.)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_audiodescriptionlink_description">
+        <source>Audio file in mp3 format. Used as an alternate audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
+        <target>Audiodatei im mp3-Format. Wird als alternative Tonspur verwendet. (Die Audiodeskription enthält den Originalton und zusätzlichen Text, der von einem Sprecher gesprochen wird. Sprach- und Audiolücken können verwendet werden, um wichtige visuelle Informationen für blinde und sehbehinderte Menschen zu beschreiben.)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_captions_description">
+        <source>Please always provide a subtitles file for videos with audio content (e.g. video with spoken text). Use vtt format.</source>
+        <target>Bitte stellen Sie bei Videos mit Audioinhalten (z. B. Video mit gesprochenem Text) immer eine Untertiteldatei zur Verfügung. Verwenden Sie das vtt-Format.</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_captionslink_description">
+        <source>Please always provide a subtitles file for videos with audio content (e.g. video with spoken text). Use vtt format.</source>
+        <target>Bitte stellen Sie bei Videos mit Audioinhalten (z. B. Video mit gesprochenem Text) immer eine Untertiteldatei zur Verfügung. Verwenden Sie das vtt-Format.</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_fulltextalternative_description">
+        <source>Link to a page with text alternative</source>
+        <target>Link zu einer Seite mit Text-Alternative</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_mp4_description">
+        <source>Please use the codec H.264 for the mp4 video. All current web browsers can play this.</source>
+        <target>Bitte verwenden Sie für das mp4-Video den Codec H.264. Alle aktuellen Webbrowser können dieses abspielen.</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_mp4link_description">
+        <source>Please use the codec H.264 for the mp4 video. All current web browsers can play this.</source>
+        <target>Bitte verwenden Sie für das mp4-Video den Codec H.264. Alle aktuellen Webbrowser können dieses abspielen.</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_posterimg_description">
+        <source>Please provide a poster image. (e.g. a good video snapshot with the same aspect ratio 16:9)</source>
+        <target>Bitte stellen Sie ein Posterbild bereit. (z.B. ein guter Video-Schnappschuss mit gleichem Seitenverhältnis, 16:9</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguage_description">
+        <source>Synchronous video with sign language. Note: If the sign language video is the main video, then please use the Main Video tab for the sign language video.</source>
+        <target>Synchrones Video mit Gebärdensprache. Hinweis: Wenn das Gebärdensprachvideo das Hauptvideo ist, verwenden Sie bitte die Registerkarte Haupt-Video für das Gebärdensprachvideo.</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguage_webm_description">
+        <source>Video in additional alternative video format (optional)</source>
+        <target>Video in zusätzlichem alternativen Videoformat (optional)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguagelink_description">
+        <source>Synchronous video with sign language. Note: If the sign language video is the main video, then please use the Main Video tab for the sign language video.</source>
+        <target>Synchrones Video mit Gebärdensprache. Hinweis: Wenn das Gebärdensprachvideo das Hauptvideo ist, verwenden Sie bitte die Registerkarte Haupt-Video für das Gebärdensprachvideo.</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_signlanguagelink_webm_description">
+        <source>Video in additional alternative video format (optional)</source>
+        <target>Video in zusätzlichem alternativen Videoformat (optional)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_webm_description">
+        <source>Video in additional alternative video format (optional)</source>
+        <target>Video in zusätzlichem alternativen Videoformat (optional)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_webmlink_description">
+        <source>Video in additional alternative video format (optional)</source>
+        <target>Video in zusätzlichem alternativen Videoformat (optional)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_mainvideo_tab">
+        <source>Main Video</source>
+        <target>Haupt-Video</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_accessibility_tab">
+        <source>Accessibility | Alternatives</source>
+        <target>Barrierefreiheit | Alternativen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

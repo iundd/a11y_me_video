@@ -1,0 +1,109 @@
+@import 'variables';
+@import 'videoplayer-mediaelement';
+@import 'videoplayer-mediaelements-plugins';
+
+.a11y-me-video {
+
+    .sr-only {
+        position    : absolute;
+        width       : 1px;
+        height      : 1px;
+        padding     : 0;
+        margin      : -1px;
+        overflow    : hidden;
+        clip        : rect(0, 0, 0, 0);
+        white-space : nowrap;
+        border      : 0;
+    }
+}
+
+.a11y-me-linklist {
+    margin-top    : 1em;
+    font-size     : 1em;
+    margin-bottom : 1em;
+}
+
+.a11y-me-videoplayer {
+
+    video {
+        max-width        : 100%;
+        height           : auto;
+        background-color : $a11y-video-controls-bg;
+    }
+
+    .mejs__time-slider,
+    .mejs__overlay-button {
+        &:focus {
+            outline : 2px dotted $a11y-video-outline-color;
+        }
+    }
+
+    .mejs__volume-slider {
+        &:focus {
+            outline        : 2px dotted $a11y-video-outline-color;
+            outline-offset : -3px;
+        }
+    }
+
+    .mejs__button,
+    .mejs__play {
+        > button {
+            &:focus {
+                outline : 2px dotted $a11y-video-outline-color;
+            }
+        }
+    }
+
+    .mejs-video-description-button,
+    .mejs__video-description-button,
+    .mejs-audio-description-button,
+    .mejs__audio-description-button,
+    .mejs__captions-button {
+        > button {
+            opacity : 0.8;
+        }
+    }
+
+    .mejs__captions-button.mejs__captions-enabled,
+    .audio-description-on,
+    .video-description-on {
+        position : relative;
+
+        &:after {
+            content    : "";
+            position   : absolute;
+            bottom     : 9%;
+            left       : 21.5%;
+            width      : 60%;
+            height     : 2px;
+
+            background : white;
+        }
+
+        > button {
+            opacity : 1 !important;
+        }
+    }
+
+    &.active-controls {
+        position       : relative;
+        padding-bottom : 40px; // fix px-height
+
+        .mejs__controls {
+            top    : 100%;
+            bottom : auto;
+
+            &:not([style*="display: none"]) {
+                background : $a11y-video-controls-bg;
+            }
+        }
+
+        .mejs__container-fullscreen {
+            .mejs__controls {
+                top    : auto;
+                bottom : 0;
+            }
+        }
+    }
+}
+

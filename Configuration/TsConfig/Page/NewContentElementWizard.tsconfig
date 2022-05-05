@@ -1,0 +1,21 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+            videoplayer {
+                iconIdentifier = tx_a11ymevideo_videoplayer
+                title = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer_title
+                description = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer_description
+                tt_content_defValues {
+                    CType = a11ymevideo_videoplayer
+                }
+            }
+            videoplayer2 {
+                iconIdentifier = tx_a11ymevideo_videoplayer2
+                title = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer2_title
+                description = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer2_description
+                tt_content_defValues {
+                    CType = a11ymevideo_videoplayer2
+                }
+            }
+    }
+    show := addToList(videoplayer, videoplayer2)
+}

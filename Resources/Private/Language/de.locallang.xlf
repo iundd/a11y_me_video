@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2022-04-21T17:37:46+00:00" product-name="a11y_me_video">
+    <header/>
+    <body>
+      <trans-unit id="fulltext.alternative">
+        <source>Text alternative to the video</source>
+        <target>Text-Alternative zum Video</target>
+      </trans-unit>
+      <trans-unit id="download.video">
+        <source>video</source>
+        <target>Video</target>
+      </trans-unit>
+      <trans-unit id="download.sign.language">
+        <source>video with sign language</source>
+        <target>Video mit Gebärdensprache</target>
+      </trans-unit>
+      <trans-unit id="download.subtitles">
+        <source>subtitles</source>
+        <target>Untertitel</target>
+      </trans-unit>
+      <trans-unit id="download.file.mp4">
+        <source>mp4 file</source>
+        <target>mp4-Datei</target>
+      </trans-unit>
+      <trans-unit id="download.file.webm">
+        <source>webm file</source>
+        <target>web-Datei</target>
+      </trans-unit>
+      <trans-unit id="download.file.vtt">
+        <source>vtt file</source>
+        <target>vtt-Datei</target>
+      </trans-unit>
+      <trans-unit id="subtitles.label">
+        <source>Subtitles</source>
+        <target>Untertitel</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

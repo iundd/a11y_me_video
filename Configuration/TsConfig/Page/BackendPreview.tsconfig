@@ -1,0 +1,3 @@
+mod.web_layout.tt_content.preview.a11ymevideo.templateRootPath = EXT:a11y_me_video/Resources/Private/Backend/Templates/Content/
+mod.web_layout.tt_content.preview.a11ymevideo.layoutRootPath = EXT:a11y_me_video/Resources/Private/Backend/Layout/
+mod.web_layout.tt_content.preview.a11ymevideo.partialRootPath = EXT:a11y_me_video/Resources/Private/Backend/Partials/

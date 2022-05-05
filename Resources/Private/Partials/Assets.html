@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:asset.css identifier="a11yMeVideo_PlayerCss" href="EXT:a11y_me_video/Resources/Public/StyleSheets/videoPlayer.min.css"></f:asset.css>
+<f:asset.css identifier="a11yMeVideo_GridCss" href="EXT:a11y_me_video/Resources/Public/StyleSheets/bsGrid.min.css"></f:asset.css>
+<f:asset.script identifier="a11yMeVideo_Mediaelement" src="EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mediaelement-and-player.min.js"></f:asset.script>
+<f:if condition="{data_tx_a11ymevideo_signlanguage} || {data_tx_a11ymevideo_signlanguage_webm} || {data_tx_a11ymevideo_audiodescription} || {data.tx_a11ymevideo_signlanguagelink} || {data.tx_a11ymevideo_signlanguagelink_webm} || {data.tx_a11ymevideo_audiodescriptionlink}   ">
+    <f:asset.script identifier="a11yMeVideo_MediaelementPlugin" src="EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/a11y.min.js"></f:asset.script>
+</f:if>
+<f:if condition="{langCode} != 'en'">
+    <f:asset.script identifier="a11yMeVideo_MediaelementLangJs_{langCode}" src="EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/lang.advanced/{langCode}.min.js"></f:asset.script>
+</f:if>
+<f:asset.script identifier="a11yMeVideo_PlayerJs" src="EXT:a11y_me_video/Resources/Public/JavaScript/videoPlayer.min.js"></f:asset.script>
+</html>

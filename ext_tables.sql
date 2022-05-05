@@ -1,0 +1,21 @@
+CREATE TABLE tt_content (
+    tx_a11ymevideo_audiodescription int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_audiodescriptionlink tinytext,
+    tx_a11ymevideo_captions int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_captionslink tinytext,
+    tx_a11ymevideo_fulltextalternative tinytext,
+    tx_a11ymevideo_header_visibility tinytext,
+    tx_a11ymevideo_language tinytext,
+    tx_a11ymevideo_mp4 int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_mp4link tinytext,
+    tx_a11ymevideo_posterimg int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_signlanguage int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_signlanguage_webm int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_signlanguagelink tinytext,
+    tx_a11ymevideo_signlanguagelink_webm tinytext,
+    tx_a11ymevideo_videooptions int(11) DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_videoposition tinytext,
+    tx_a11ymevideo_videowidth tinytext,
+    tx_a11ymevideo_webm int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_a11ymevideo_webmlink tinytext
+);

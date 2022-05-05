@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2022-04-21T17:37:46+00:00" product-name="a11y_me_video">
+    <header/>
+    <body>
+      <trans-unit id="fulltext.alternative">
+        <source>text alternative to the video</source>
+      </trans-unit>
+      <trans-unit id="download.video">
+        <source>video</source>
+      </trans-unit>
+      <trans-unit id="download.sign.language">
+        <source>video with sign language</source>
+      </trans-unit>
+      <trans-unit id="download.subtitles">
+        <source>subtitles</source>
+      </trans-unit>
+      <trans-unit id="download.file.mp4">
+        <source>mp4 file</source>
+      </trans-unit>
+      <trans-unit id="download.file.webm">
+        <source>webm file</source>
+      </trans-unit>
+      <trans-unit id="download.file.vtt">
+        <source>vtt file</source>
+      </trans-unit>
+      <trans-unit id="subtitles.label">
+        <source>subtitles</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
