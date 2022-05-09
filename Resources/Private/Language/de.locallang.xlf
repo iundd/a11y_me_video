@@ -4,7 +4,7 @@
     <header/>
     <body>
       <trans-unit id="fulltext.alternative">
-        <source>Text alternative to the video</source>
+        <source>Text alternative for the video</source>
         <target>Text-Alternative zum Video</target>
       </trans-unit>
       <trans-unit id="download.video">

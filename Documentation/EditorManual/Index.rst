@@ -4,11 +4,17 @@
 Editor Manual
 =============
 
+Select **A11y Video Player & Text** or **A11y Video Player & Text (linked file resources)**:
+
 .. figure:: ../Images/NewContentElement.png
    :width: 800
    :alt: window create new content element
 
-   select **A11y Video Player & Text** or **A11y Video Player & Text (linked file resources)**
+
+----
+
+Table of Contents
+"""""""""""""""""
 
 .. toctree::
    :maxdepth: 5

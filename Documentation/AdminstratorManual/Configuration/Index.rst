@@ -9,7 +9,7 @@ Overriding templates
 
 **EXT:a11y_me_video** is using Fluid as template engine.
 
-This documentation won't bring you all information about Fluid but only the
+This documentation won't give you all the information about Fluid but only the
 most important things you need for using it. You can get more information in the section
 `Fluid templates of the Sitepackage tutorial <https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/FluidTemplates/>`__.
 A complete reference of Fluid ViewHelpers provided by TYPO3 can be found in the
@@ -18,7 +18,8 @@ A complete reference of Fluid ViewHelpers provided by TYPO3 can be found in the
 Change the templates using TypoScript constants
 -----------------------------------------------
 
-As any Extbase based extension, you can find the templates in the directory :file:`EXT:a11y_me_video/Resources/Private/`.
+Like any Extbase based extension, you can find the templates in the directory :file:`EXT:a11y_me_video/Resources/Private/`.
+
 
 If you want to change a template, copy the desired files to the directory where you store the templates.
 
@@ -57,11 +58,11 @@ e.G.
 Change CSS
 ----------
 
-You can adapt the CSS to your own needs. As a basis, you can use the existing
-Use CSS files or the scss source files. Save the file best in your own site
-package extension and integrate it alternatively.
+You can adapt the CSS to your own needs. You can use the existing CSS or
+SCSS files as base. Copy the file to your own site package and include them
+with the alternative path.
 
-The source files can be found in the following folder:
+You can find the original files here:
 
 *   :file:`EXT:a11y_me_video/Resources/Public/StyleSheets/`
 *   :file:`EXT:a11y_me_video/Resources/Private/Scss/`
@@ -69,8 +70,9 @@ The source files can be found in the following folder:
 Example: Change background color of video and controls (css or scss)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+override css:
+
 .. code-block:: css
-   :caption: override css
 
    /* background color video */
    .a11y-me-videoplayer video {
@@ -82,8 +84,9 @@ Example: Change background color of video and controls (css or scss)
       background-color: #2b3840;
    }
 
+change scss variables (:file:`EXT:a11y_me_video/Resources/Private/Scss/_variables.scss`):
+
 .. code-block:: css
-   :caption: scss variables, EXT:a11y_me_video/Resources/Private/Scss/_variables.scss
 
    $a11y-video-outline-color : white;
    $a11y-video-controls-bg   : #2b3840;

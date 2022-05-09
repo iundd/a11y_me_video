@@ -21,6 +21,9 @@ Accessible video player based on MediaElement.js, A11y Plugin and Fluid
 :Author:
    Robert Pudenz
 
+:Company:
+   .i-D. internet + Design GmbH & Co. KG
+
 :E-Mail:
    opensource@i-d.de
 
@@ -56,7 +59,7 @@ The new content element supports many features:
    -  text (ck-editor)
    -  content element layout (layout, frame, space before, space after)
 
--  Video player based on MediaElement.js and A11y plugin
+-  video player based on MediaElement.js and A11y plugin
 -  control via keyboard, mouse and touch
 -  keyboard focus highlight
 -  screen reader support with wai-aria
@@ -85,7 +88,7 @@ The new content element supports many features:
 MediaElement.Js
 ===============
 
-Video player based on MediaElement.js and A11y Plugin.js (A
+Video player based on MediaElement.js and A11y Plugin.js (Aktion Mensch Plugin):
 
 *  MediaElements.js
 
@@ -98,8 +101,10 @@ Video player based on MediaElement.js and A11y Plugin.js (A
    *   `<https://github.com/mediaelement/mediaelement-plugins>`__
    *   `<https://github.com/mediaelement/mediaelement-plugins/tree/master/dist/a11y>`__
 
+----
 
-**Table of Contents:**
+Table of Contents
+"""""""""""""""""
 
 .. toctree::
    :maxdepth: 5

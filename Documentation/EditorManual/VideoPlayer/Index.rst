@@ -4,7 +4,7 @@
 A11y Video Player & Text
 ========================
 
-Accessible video player (local file recources)
+Accessible video player (local file resources)
 
 Tab General
 ===========
@@ -22,13 +22,15 @@ standard content elements e.g. *Text & Media*.
 Tab Main Video
 ==============
 
-Language (controls, subtitels)
+Language (controls, subtitles)
    Select the language of the controls and the subtitle file (if available) of
    the video player here.
 
    The *Default* setting means that the settings on the page are used
-   automatically. You can choose another language from the list. Only languages
-   that are in the list were supported.
+   automatically.
+
+   You can choose another language from the list. Only the languages
+   in the list are supported.
 
 Video position
    Set the position of the video relative to the optional text.
@@ -57,7 +59,7 @@ Main video | webm
 Tab Accessibility | Alternatives
 ================================
 
-Here you can specify different alternatives to the main video. Use it to improve
+Here you can specify alternatives to the main video. Use it to improve
 accessibility.
 
 Video with sign language | mp4
@@ -73,7 +75,7 @@ Video with sign language | webm
    Video in additional alternative video format (optional)
 
 Audio description | mp3
-   Audio file in mp3 format. Used an an alternate audio track.
+   Audio file in mp3 format. Used as an alternative audio track.
 
    The audio track contains the original sound and additional text spoken by
    a narrator. Speech and audio gaps can be used to describe additional
@@ -96,10 +98,10 @@ standard content elements e.g. *Text & Media*.
 
 -  Layout
 -  Frame
--  Space before
+-  Space Before
 -  Space After
 
-All setting are optional.
+All settings are optional.
 
 .. figure:: ../../Images/VideoPlayerTabAppearance.png
    :width: 820

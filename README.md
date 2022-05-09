@@ -1,6 +1,6 @@
 # Accessible video player based on MediaElement.js, A11y Plugin and Fluid.
 
-### The new content element supports many features
+### The new content element supports many features:
 
 * supports two video formats: mp4 and additional webm
 * customizable through fluid templates, sass, css and javascript
@@ -16,7 +16,7 @@
   * header (header, type, align, date, link, subheader)
   * text (ck-editor, video position: left, right, above, below)
   * content element layout (layout, frame, space before, space after)
-* Video player based on MediaElement.js and A11y plugin
+* video player based on MediaElement.js and A11y plugin
 * control via keyboard, mouse and touch
 * keyboard focus highlight
 * screen reader support with wai-aria
@@ -39,12 +39,12 @@
 
 ## Installation
 
-The extension needs to be installed as any other extension of TYPO3 CMS. Get the
+The extension needs to be installed like any other TYPO3 CMS extension. Get the
 extension by one of the following methods.
 
 ### Installation using composer
 
-The recommended way to install the extension is by using [Composer](https://getcomposer.org/)
+The recommended way to install the extension is by using [Composer](https://getcomposer.org/).
 In your composer based TYPO3 project root, just do
 
 ```sh
@@ -64,14 +64,14 @@ git clone https://github.com/iundd/a11y_me_video.git
 ### Installation from TYPO3 Extension Repository (TER)
 
 *  **Get it from the Extension Manager:** Switch to the module `Admin Tools > Extensions`.
-*  Switch to `Get Extensions` and search for the extension key **a11y_me_video**
-*  install the extension from the repository.
+*  Switch to `Get Extensions` and search for the extension key **a11y_me_video**.
+*  Install the extension from the repository.
 
 
 ### Download from extensions.typo3.org
 
-*  Go to [https://extensions.typo3.org/extension/a11y_me_video](https://extensions.typo3.org/extension/a11y_me_video){:target="_blank"}
-   and get the current version from by downloading the zip version
+*  Go to [https://extensions.typo3.org/extension/a11y_me_video](https://extensions.typo3.org/extension/a11y_me_video)
+   and get the current version by downloading the zip version
 
 
 ### Preparation: Include static TypoScript
@@ -90,15 +90,14 @@ The extension ships some TypoScript code which needs to be included.
 
 ### Versioning
 
-This project uses [semantic versioning](https://semver.org){:target="_blank"} which means that
+This project uses [semantic versioning](https://semver.org) which means that
 
 *  **bugfix updates** (e.g. 1.0.0 => 1.0.1) just include small bugfixes or
    security relevant stuff without breaking changes,
 *  **minor updates** (e.g. 1.0.0 => 1.1.0) include new features and smaller
    tasks without breaking changes and
 *  **major updates** (e.g. 1.0.0 => 2.0.0) contain breaking changes which can be
-   refactorings, features or bugfixes.The extension needs to be installed as any other extension of TYPO3 CMS. Get the
-   extension by one of the following methods.
+   refactorings, features or bugfixes.
 
 
 
@@ -116,7 +115,7 @@ A complete reference of Fluid ViewHelpers provided by TYPO3 can be found in the 
 
 #### Change the templates using TypoScript constants
 
-As any Extbase based extension, you can find the templates in the directory `EXT:a11y_me_video/Resources/Private/`.
+Like any Extbase based extension, you can find the templates in the directory `EXT:a11y_me_video/Resources/Private/`.
 
 If you want to change a template, copy the desired files to the directory where you store the templates.
 
@@ -150,10 +149,10 @@ e.G.
 
 #### Change CSS
 
-You can adapt the CSS to your own needs. Als Grundlage können sie die vorhanden CSS-Dateien oder auch die scss-Quelldateien verwenden.
-Speichern Sie die Datei am besten in ihre eigenen site package extension ab und binden Sie sie alternativ ein.
+You can adapt the CSS to your own needs. You can use the existing CSS or SCSS files as base. Copy the file to your own
+site package and include them with the alternative path.
 
-Die Original-Dateien finden Sie hier:
+You can find the original files here:
 
 * EXT:a11y_me_video/Resources/Public/StyleSheets/
 * EXT:a11y_me_video/Resources/Private/Scss/
@@ -173,7 +172,7 @@ override css:
    }
 ```   
 
-scss variables, EXT:a11y_me_video/Resources/Private/Scss/_variables.scss
+change scss variables (EXT:a11y_me_video/Resources/Private/Scss/_variables.scss)
 ```
    $a11y-video-outline-color : white;
    $a11y-video-controls-bg   : #2b3840;
@@ -218,15 +217,15 @@ The default header type is 2 (= h2 header).
 
 ![screen shot of header type!](Documentation/Images/HeaderType.png)
 
-## Add video player modul to a page 
+## Add video player module to a page 
 
-Select **A11y Video Player & Text** or **A11y Video Player & Text (linked file resources)**
+Select **A11y Video Player & Text** or **A11y Video Player & Text (linked file resources)**:
 
 ![create new content element!](Documentation/Images/NewContentElement.png)
 
 ## Content-Element: A11y Video Player & Text 
 
-Accessible video player (local file recources)
+Accessible video player (local file resources)
 
 ### Tab General
 
@@ -240,12 +239,12 @@ standard content elements e.g. *Text & Media*.
 
 ### Tab Main Video
 
-* Language (controls, subtitels)
+* Language (controls, subtitles)
   * Select the language of the controls and the subtitle file (if available) of the video player here.
 
     The *Default* setting means that the settings on the page are used automatically.
 
-    You can choose another language from the list. Only languages that are in the list were supported.
+    You can choose another language from the list. Only the languages in the list are supported.
 * Video position
   * Set the position of the video relative to the optional text. (left, right, below, above)
 * Video width
@@ -262,7 +261,7 @@ standard content elements e.g. *Text & Media*.
 
 ### Tab Accessibility | Alternatives
 
-you can specify different alternatives to the main video. Use it to improve accessibility.
+Here you can specify alternatives to the main video. Use it to improve accessibility.
 
 * Video with sign language | mp4
   * Synchronous video with sign language.
@@ -274,12 +273,12 @@ you can specify different alternatives to the main video. Use it to improve acce
 * Video with sign language | webm
   * Video in additional alternative video format (optional)
 * Audio description | mp3
-  * Audio file in mp3 format. Used as an alternate audio track.
+  * Audio file in mp3 format. Used as an alternative audio track.
 
     The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can
     be used to describe additional important visual information for blind and visually impaired people.
 * Text alternative
-  ** Link to a page with text alternative.
+  * Link to a page with text alternative.
 
 ![screen shot of tab accessibility and alternatives!](Documentation/Images/VideoPlayerTabAccessibility.png)
 
@@ -290,10 +289,10 @@ standard content elements e.g. *Text & Media*.
 
 * Layout
 * Frame 
-* Space before 
+* Space Before 
 * Space After
 
-All setting are optional.
+All settings are optional.
 
 ![screen shot of tab accessibility and alternatives!](Documentation/Images/VideoPlayerTabAppearance.png)
 
@@ -320,12 +319,12 @@ standard content elements e.g. *Text & Media*.
 
 ### Tab Main Video
 
-* Language (controls, subtitels)
+* Language (controls, subtitles)
     * Select the language of the controls and the subtitle file (if available) of the video player here.
 
       The *Default* setting means that the settings on the page are used automatically.
 
-      You can choose another language from the list. Only languages that are in the list were supported.
+      You can choose another language from the list. Only the languages in the list are supported.
 * Video position
     * Set the position of the video relative to the optional text. (left, right, below, above)
 * Video width
@@ -342,7 +341,7 @@ standard content elements e.g. *Text & Media*.
 
 ### Tab Accessibility | Alternatives
 
-you can specify different alternatives to the main video. Use it to improve accessibility.
+Here you can specify alternatives to the main video. Use it to improve accessibility.
 
 * Video with sign language | mp4
     * Synchronous video with sign language.
@@ -353,12 +352,12 @@ you can specify different alternatives to the main video. Use it to improve acce
 * Video with sign language | webm
     * Video in additional alternative video format (optional)
 * Audio description | mp3
-    * Audio file in mp3 format. Used as an alternate audio track.
+    * Audio file in mp3 format. Used as an alternative audio track.
 
       The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can
       be used to describe additional important visual information for blind and visually impaired people.
 * Text alternative
-  ** Link to a page with text alternative.
+  * Link to a page with text alternative.
 
 ![screen shot of tab accessibility and alternatives!](Documentation/Images/VideoPlayer2TabAccessibility.png)
 
@@ -369,10 +368,10 @@ standard content elements e.g. *Text & Media*.
 
 * Layout
 * Frame
-* Space before
+* Space Before
 * Space After
 
-All setting are optional.
+All settings are optional.
 
 ![screen shot of tab accessibility and alternatives!](Documentation/Images/VideoPlayerTabAppearance.png)
 
@@ -415,3 +414,15 @@ Use at your own risk.
   * https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel_signlanguageVideo.webm
 * Audio description | mp3:
   * https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_audioDescription.mp3
+
+## MediaElement.Js
+
+Video player based on MediaElement.js and A11y Plugin.js (Aktion Mensch Plugin):
+
+* MediaElements.js
+  *  [Homepage](https://www.mediaelementjs.com)
+  *  https://github.com/mediaelement/mediaelement
+* A11y Plugin (Aktion Mensch Plugin)
+  *  [Videos für alle (german)](https://www.mediaelementjs.com/)
+  *  https://github.com/mediaelement/mediaelement-plugins
+  *  https://github.com/mediaelement/mediaelement-plugins/tree/master/dist/a11y

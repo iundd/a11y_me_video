@@ -4,7 +4,7 @@
 Installation
 ============
 
-The extension needs to be installed as any other extension of TYPO3 CMS. Get the
+The extension needs to be installed like any other TYPO3 CMS extension. Get the
 extension by one of the following methods.
 
 Installation using composer
@@ -31,14 +31,14 @@ Installation from TYPO3 Extension Repository (TER)
 ==================================================
 
 *  **Get it from the Extension Manager:** Switch to the module `Admin Tools > Extensions`.
-*  Switch to `Get Extensions` and search for the extension key **a11y_me_video**
-*  install the extension from the repository.
+*  Switch to `Get Extensions` and search for the extension key **a11y_me_video**.
+*  Install the extension from the repository.
 
 Download from extensions.typo3.org
 ==================================
 
 *  Go to `<https://extensions.typo3.org/extension/a11y_me_video>`__
-   and get the current version from by downloading the zip version
+   and get the current version by downloading the zip version
 
 Preparation: Include static TypoScript
 ======================================
@@ -61,7 +61,7 @@ Versioning
 
 This project uses `semantic versioning <https://semver.org/>`__, which means that
 
-*  **bugfix updates** (e.g. 1.0.0 => 1.0.1) just include small bugfixes or
+*  **bugfix updates** (e.g. 1.0.0 => 1.0.1) only include small bugfixes or
    security relevant stuff without breaking changes,
 *  **minor updates** (e.g. 1.0.0 => 1.1.0) include new features and smaller
    tasks without breaking changes and

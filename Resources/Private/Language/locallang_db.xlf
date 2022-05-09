@@ -22,7 +22,7 @@
         <source>Header visibility</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_language">
-        <source>Language (controls, subtitels)</source>
+        <source>Language (controls, subtitles)</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_mp4">
         <source>Main video | mp4</source>
@@ -172,10 +172,10 @@
         <source>A11y Video Player &amp; Text (linked file resources)</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_audiodescription_description">
-        <source>Audio file in mp3 format. Used as an alternate audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
+        <source>Audio file in mp3 format. Used as an alternative audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_audiodescriptionlink_description">
-        <source>Audio file in mp3 format. Used as an alternate audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
+        <source>Audio file in mp3 format. Used as an alternative audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_captions_description">
         <source>Please always provide a subtitles file for videos with audio content (e.g. video with spoken text). Use vtt format.</source>

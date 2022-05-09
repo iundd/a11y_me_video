@@ -28,7 +28,7 @@
         <target>Sichtbarkeit Überschrift</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_language">
-        <source>Language (controls, subtitels)</source>
+        <source>Language (controls, subtitles)</source>
         <target>Sprache (Bedienelemente, Untertitel)</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_mp4">
@@ -204,7 +204,7 @@
         <target>unterhalb</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.3">
-        <source>below</source>
+        <source>above</source>
         <target>oberhalb</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_videowidth.I.0">
@@ -218,18 +218,18 @@
       </trans-unit>
       <trans-unit id="tt_content.CType.a11ymevideo_videoplayer">
         <source>A11y Video Player &amp; Text</source>
-        <target>A11y Videplayer &amp; Text</target>
+        <target>A11y Videoplayer &amp; Text</target>
       </trans-unit>
       <trans-unit id="tt_content.CType.a11ymevideo_videoplayer2">
         <source>A11y Video Player &amp; Text (linked file resources)</source>
-        <target>A11y Videoplayer &amp; Text (verlinkte Datei-Resourcen)</target>
+        <target>A11y Videoplayer &amp; Text (verlinkte Datei-Ressourcen)</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_audiodescription_description">
-        <source>Audio file in mp3 format. Used as an alternate audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
+        <source>Audio file in mp3 format. Used as an alternative audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
         <target>Audiodatei im mp3-Format. Wird als alternative Tonspur verwendet. (Die Audiodeskription enthält den Originalton und zusätzlichen Text, der von einem Sprecher gesprochen wird. Sprach- und Audiolücken können verwendet werden, um wichtige visuelle Informationen für blinde und sehbehinderte Menschen zu beschreiben.)</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_audiodescriptionlink_description">
-        <source>Audio file in mp3 format. Used as an alternate audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
+        <source>Audio file in mp3 format. Used as an alternative audio track. (The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information for blind and visually impaired people.)</source>
         <target>Audiodatei im mp3-Format. Wird als alternative Tonspur verwendet. (Die Audiodeskription enthält den Originalton und zusätzlichen Text, der von einem Sprecher gesprochen wird. Sprach- und Audiolücken können verwendet werden, um wichtige visuelle Informationen für blinde und sehbehinderte Menschen zu beschreiben.)</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_captions_description">

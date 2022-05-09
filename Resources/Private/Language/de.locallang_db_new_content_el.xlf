@@ -8,16 +8,16 @@
         <target>A11y Videoplayer &amp; Text</target>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.videoplayer_description">
-        <source>Accessible video player (local file recources)</source>
-        <target>Barrierefreier Videoplayer (lokale Datei-Resourcen)</target>
+        <source>Accessible video player (local file resources)</source>
+        <target>Barrierefreier Videoplayer (lokale Datei-Ressourcen)</target>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.videoplayer2_title">
         <source>A11y Video Player &amp; Text (linked file resources)</source>
-        <target>A11y Videoplayer &amp; Text (verlinkte Datei-Resourcen)</target>
+        <target>A11y Videoplayer &amp; Text (verlinkte Datei-Ressourcen)</target>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.videoplayer2_description">
         <source>Accessible video player. The player uses linked file resources, for example external links.</source>
-        <target>Barrierefreier Videoplayer. Der Videoplayer benutzt verlinkte Datei-Resourcen, z.B. externe Links.</target>
+        <target>Barrierefreier Videoplayer. Der Videoplayer benutzt verlinkte Datei-Ressourcen, z.B. externe Links.</target>
       </trans-unit>
     </body>
   </file>

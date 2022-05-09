@@ -7,7 +7,7 @@
         <source>A11y Video Player &amp; Text</source>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.videoplayer_description">
-        <source>Accessible video player (local file recources)</source>
+        <source>Accessible video player (local file resources)</source>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.videoplayer2_title">
         <source>A11y Video Player &amp; Text (linked file resources)</source>
