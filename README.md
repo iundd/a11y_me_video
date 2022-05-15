@@ -34,7 +34,7 @@
 |                 | URL                                                      |
 |-----------------|----------------------------------------------------------|
 | **Repository**  | https://github.com/iundd/a11y_me_video                   |
-| **Read online** | https://docs.typo3.org/p/iundd/a11y_me_video/main/en-us/ |
+| **Read online** | https://docs.typo3.org/p/iundd/a11y-me-video/main/en-us/ |
 | **TER**         | https://extensions.typo3.org/extension/a11y_me_video     |
 
 ## Installation
@@ -272,6 +272,8 @@ Here you can specify alternatives to the main video. Use it to improve accessibi
     Note: If the sign language video is the main video, then please use the Main Video tab for the sign language video.
 * Video with sign language | webm
   * Video in additional alternative video format (optional)
+
+    Note: This video will be ignored if you don't specify a mp4 video.
 * Audio description | mp3
   * Audio file in mp3 format. Used as an alternative audio track.
 
@@ -351,6 +353,8 @@ Here you can specify alternatives to the main video. Use it to improve accessibi
       Note: If the sign language video is the main video, then please use the Main Video tab for the sign language video.
 * Video with sign language | webm
     * Video in additional alternative video format (optional)
+
+      Note: This video will be ignored if you don't specify a mp4 video.
 * Audio description | mp3
     * Audio file in mp3 format. Used as an alternative audio track.
 
