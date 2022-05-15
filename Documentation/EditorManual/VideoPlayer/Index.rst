@@ -74,6 +74,8 @@ Video with sign language | mp4
 Video with sign language | webm
    Video in additional alternative video format (optional)
 
+   Note: This video will be ignored if you don't specify a mp4 video.
+
 Audio description | mp3
    Audio file in mp3 format. Used as an alternative audio track.
 
