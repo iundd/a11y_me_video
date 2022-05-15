@@ -31,11 +31,11 @@
 
 ----
 
-|                 | URL                                                      |
-|-----------------|----------------------------------------------------------|
-| **Repository**  | https://github.com/iundd/a11y_me_video                   |
-| **Read online** | https://docs.typo3.org/p/iundd/a11y-me-video/main/en-us/ |
-| **TER**         | https://extensions.typo3.org/extension/a11y_me_video     |
+|                 | URL                                                     |
+|-----------------|---------------------------------------------------------|
+| **Repository**  | https://github.com/iundd/a11y_me_video                  |
+| **Read online** | https://docs.typo3.org/p/iundd/a11y-me-video/1.0/en-us/ |
+| **TER**         | https://extensions.typo3.org/extension/a11y_me_video    |
 
 ## Installation
 
@@ -48,7 +48,7 @@ The recommended way to install the extension is by using [Composer](https://getc
 In your composer based TYPO3 project root, just do
 
 ```sh
-composer require iundd/a11y_me_video
+composer req iundd/a11y-me-video
 ```
 
 

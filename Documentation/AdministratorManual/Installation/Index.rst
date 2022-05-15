@@ -16,7 +16,7 @@ In your composer based TYPO3 project root, just do
 
 .. code-block:: bash
 
-   composer require iundd/a11y_me_video
+   composer req iundd/a11y-me-video
 
 Latest version from git
 =======================
