@@ -101,17 +101,17 @@ change scss variables (:file:`EXT:a11y_me_video/Resources/Private/Scss/_variable
 Javascript Sources
 ------------------
 
-+------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-| JavaScript source file(s)                                                                                  | Description                                    |
-+============================================================================================================+================================================+
-| :file:`EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mediaelement-and-player.js` | MediaElements.js player                        |
-+------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-| :file:`EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/lang.advanced/*.js`         | extended language files for player             |
-+------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-| :file:`EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/a11y.js`        | a11y plugin for subtitle und audio description |
-+------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-| :file:`EXT:a11y_me_video/Resources/Public/videoPlayer.js`                                                  | starts init mediaelement players & some fixes  |
-+------------------------------------------------------------------------------------------------------------+------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| JavaScript source file(s)                                                                                  | Description                                     |
++============================================================================================================+=================================================+
+| :file:`EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mediaelement-and-player.js` | MediaElements.js player                         |
++------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| :file:`EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/lang.advanced/*.js`         | extended language files for player              |
++------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| :file:`EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/a11y.js`        | a11y plugin for subtitles und audio description |
++------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| :file:`EXT:a11y_me_video/Resources/Public/videoPlayer.js`                                                  | starts init mediaelement players & some fixes   |
++------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
 
 Override TypoScript settings
 =============================

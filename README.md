@@ -88,6 +88,8 @@ The extension ships some TypoScript code which needs to be included.
    
    For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
 
+![screen shot of including static TypeScript!](Documentation/Images/TemplateInclude.png)
+
 ### Versioning
 
 This project uses [semantic versioning](https://semver.org) which means that
@@ -185,12 +187,12 @@ change scss variables (EXT:a11y_me_video/Resources/Private/Scss/_variables.scss)
 
 ##### Javascript Sources
 
-| JavaScript source file(s)                                                                          | Description                                    |
-|----------------------------------------------------------------------------------------------------|------------------------------------------------|
-| EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mediaelement-and-player.js | MediaElements.js player                        |
-| EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/lang.advanced/*.js         | extended language files for player             |
-| EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/a11y.js        | a11y plugin for subtitle und audio description |
-| EXT:a11y_me_video/Resources/Public/videoPlayer.js                                                  | starts init mediaelement players & some fixes  |
+| JavaScript source file(s)                                                                          | Description                                     |
+|----------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mediaelement-and-player.js | MediaElements.js player                         |
+| EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/lang.advanced/*.js         | extended language files for player              |
+| EXT:a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/a11y.js        | a11y plugin for subtitles und audio description |
+| EXT:a11y_me_video/Resources/Public/videoPlayer.js                                                  | starts init mediaelement players & some fixes   |
 
 
 ### Override TypoScript settings
@@ -240,7 +242,7 @@ standard content elements e.g. *Text & Media*.
 ### Tab Main Video
 
 * Language (controls, subtitles)
-  * Select the language of the controls and the subtitle file (if available) of the video player here.
+  * Select the language of the controls and the subtitles file (if available) of the video player here.
 
     The *Default* setting means that the settings on the page are used automatically.
 
@@ -322,7 +324,7 @@ standard content elements e.g. *Text & Media*.
 ### Tab Main Video
 
 * Language (controls, subtitles)
-    * Select the language of the controls and the subtitle file (if available) of the video player here.
+    * Select the language of the controls and the subtitles file (if available) of the video player here.
 
       The *Default* setting means that the settings on the page are used automatically.
 

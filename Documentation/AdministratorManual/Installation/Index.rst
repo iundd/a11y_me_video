@@ -56,6 +56,10 @@ The extension ships some TypoScript code which needs to be included.
    For some css classes to work, you also need to select
    **Fluid Content Elements CSS (optional)**
 
+.. figure:: ../../Images/TemplateInclude.png
+   :width: 820
+   :alt: screen shot of including static TypeScript
+
 Versioning
 ----------
 

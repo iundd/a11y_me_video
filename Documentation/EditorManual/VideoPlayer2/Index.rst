@@ -26,7 +26,7 @@ Tab Main Video
 ==============
 
 Language (controls, subtitles)
-   Select the language of the controls and the subtitle file (if available) of
+   Select the language of the controls and the subtitles file (if available) of
    the video player here.
 
    The *Default* setting means that the settings on the page are used
