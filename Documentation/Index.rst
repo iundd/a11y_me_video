@@ -97,7 +97,7 @@ Video player based on MediaElement.js and A11y Plugin.js (Aktion Mensch Plugin):
 
 *  A11y Plugin (Aktion Mensch Plugin)
 
-   *   `Videos für alle (german) <https://www.mediaelementjs.com/>`__
+   *   `Videos für alle (german) <https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreier-videoplayer>`__
    *   `<https://github.com/mediaelement/mediaelement-plugins>`__
    *   `<https://github.com/mediaelement/mediaelement-plugins/tree/master/dist/a11y>`__
 

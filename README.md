@@ -429,6 +429,6 @@ Video player based on MediaElement.js and A11y Plugin.js (Aktion Mensch Plugin):
   *  [Homepage](https://www.mediaelementjs.com)
   *  https://github.com/mediaelement/mediaelement
 * A11y Plugin (Aktion Mensch Plugin)
-  *  [Videos für alle (german)](https://www.mediaelementjs.com/)
+  *  [Videos für alle (german)](https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreier-videoplayer)
   *  https://github.com/mediaelement/mediaelement-plugins
   *  https://github.com/mediaelement/mediaelement-plugins/tree/master/dist/a11y
