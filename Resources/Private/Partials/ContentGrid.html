@@ -19,7 +19,7 @@
                 <f:render partial="VideoBody" arguments="{_all}"/>
             </div>
             <f:if condition="{data.bodytext}">
-                <div class="col-12 a11y-me-mt-4">
+                <div class="a11y-me-col-lg-12 a11y-me-mt-4">
                     <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
                 </div>
             </f:if>
@@ -54,7 +54,7 @@
         <f:defaultCase>
             <f:comment>video position: below</f:comment>
             <f:if condition="{data.bodytext}">
-                <div class="col-12 mb-4">
+                <div class="a11y-me-col-lg-12 a11y-me-mb-4">
                     <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
                 </div>
             </f:if>

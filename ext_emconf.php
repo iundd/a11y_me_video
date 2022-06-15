@@ -8,7 +8,7 @@ $EM_CONF[$_EXTKEY] = array (
   'author_email' => 'opensource@i-d.de',
   'author_company' => '.i-D. internet + Design GmbH & Co. KG',
   'state' => 'beta',
-  'version' => '1.0.5',
+  'version' => '1.0.6',
   'constraints' =>
   array (
     'depends' =>

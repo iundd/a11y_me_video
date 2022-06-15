@@ -25,7 +25,7 @@
         "typo3/cms-frontend": "^10.4 || ^11.5"
     },
     "replace": {
-        "typo3-ter/a11y-me-video": "1.0.5"
+        "typo3-ter/a11y-me-video": "1.0.6"
     },
     "autoload": {
         "psr-4": {
