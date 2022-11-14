@@ -27,6 +27,12 @@ Accessible video player based on MediaElement.js, A11y Plugin and Fluid
 :E-Mail:
    opensource@i-d.de
 
+:Repository:
+   `<https://github.com/iundd/a11y_me_video>`__
+
+:TER:
+   `<https://extensions.typo3.org/extension/a11y_me_video>`__
+
 :License:
    This document is published under the
    `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
@@ -74,16 +80,6 @@ The new content element supports many features:
    :alt: video player
 
    video player in frontend view
-
-+---------------+---------------------------------------------------------------+
-|               | URL                                                           |
-+---------------+===============================================================+
-| Repository    | `<https://github.com/iundd/a11y_me_video>`__                  |
-+===============+---------------------------------------------------------------+
-| Documentation | `<https://docs.typo3.org/p/iundd/a11y-me-video/1.0/en-us/>`__ |
-+===============+---------------------------------------------------------------+
-| TER           | `<https://extensions.typo3.org/extension/a11y_me_video>`__    |
-+===============+---------------------------------------------------------------+
 
 MediaElement.Js
 ===============
