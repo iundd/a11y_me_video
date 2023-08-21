@@ -8,12 +8,12 @@ $EM_CONF[$_EXTKEY] = array (
   'author_email' => 'opensource@i-d.de',
   'author_company' => '.i-D. internet + Design GmbH & Co. KG',
   'state' => 'beta',
-  'version' => '1.0.8',
+  'version' => '2.0.0',
   'constraints' =>
   array (
     'depends' =>
     array (
-      'typo3' => '10.4.0-11.5.99',
+      'typo3' => '12.0.0-12.4.99',
     ),
     'conflicts' =>
     array (

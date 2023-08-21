@@ -15,17 +15,22 @@
             "name": "Robert Pudenz",
             "email": "opensource@i-d.de",
             "role": "Developer"
+        },
+        {
+            "name": "Kallol Chakraborty",
+            "email": "kchakraborty@learntube.de",
+            "role": "Developer"
         }
     ],
     "require": {
-        "typo3/cms-backend": "^10.4 || ^11.5",
-        "typo3/cms-core": "^10.4 || ^11.5",
-        "typo3/cms-extbase": "^10.4 || ^11.5",
-        "typo3/cms-fluid": "^10.4 || ^11.5",
-        "typo3/cms-frontend": "^10.4 || ^11.5"
+        "typo3/cms-backend": "^12.4",
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-extbase": "^12.4",
+        "typo3/cms-fluid": "^12.4",
+        "typo3/cms-frontend": "^12.4"
     },
     "replace": {
-        "typo3-ter/a11y-me-video": "1.0.8"
+        "typo3-ter/a11y-me-video": "2.0.0"
     },
     "autoload": {
         "psr-4": {

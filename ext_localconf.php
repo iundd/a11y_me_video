@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 call_user_func(function () {
 
@@ -27,8 +27,6 @@ $iconRegistry->registerIcon(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:a11y_me_video/Configuration/TsConfig/Page/BackendPreview.tsconfig">'
 );
 // Add backend preview hook
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['a11y_me_video'] = 
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['a11y_me_video'] =
     iundd\A11yMeVideo\Hooks\PageLayoutViewDrawItem::class;
-
 });
-
