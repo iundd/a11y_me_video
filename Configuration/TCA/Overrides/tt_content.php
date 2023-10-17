@@ -5,6 +5,8 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 defined('TYPO3') || die();
 
 call_user_func(function () {
+    $llFile = 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:';
+
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer']  = 'tx_a11ymevideo_videoplayer';
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer2'] = 'tx_a11ymevideo_videoplayer';
     $tempColumns                                                                          = [
@@ -15,18 +17,18 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescription_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_audiodescription_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescription',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_audiodescription',
         ],
         'tx_a11ymevideo_audiodescriptionlink'  => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescriptionlink_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_audiodescriptionlink_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescriptionlink',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_audiodescriptionlink',
         ],
         'tx_a11ymevideo_captions'              => [
             'config'      => [
@@ -35,27 +37,27 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captions_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_captions_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captions',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_captions',
         ],
         'tx_a11ymevideo_captionslink'          => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captionslink_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_captionslink_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captionslink',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_captionslink',
         ],
         'tx_a11ymevideo_fulltextalternative'   => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['page', 'url', 'record'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_fulltextalternative_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_fulltextalternative',
         ],
         'tx_a11ymevideo_header_visibility'     => [
             'config'  => [
@@ -64,11 +66,11 @@ call_user_func(function () {
                 ],
                 'items'      => [
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_header_visibility.I.0',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_header_visibility.I.0',
                         'value' => '0',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_header_visibility.I.1',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_header_visibility.I.1',
                         'value' => '1',
                     ],
                 ],
@@ -76,7 +78,7 @@ call_user_func(function () {
                 'type'       => 'select',
             ],
             'exclude' => '1',
-            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_header_visibility',
+            'label'   => $llFile . 'tt_content.tx_a11ymevideo_header_visibility',
         ],
         'tx_a11ymevideo_language'              => [
             'config'  => [
@@ -85,103 +87,103 @@ call_user_func(function () {
                 ],
                 'items'      => [
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.0',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.0',
                         'value' => 'default',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.1',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.1',
                         'value' => 'en',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.2',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.2',
                         'value' => 'fr',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.3',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.3',
                         'value' => 'de',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.4',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.4',
                         'value' => 'es',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.5',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.5',
                         'value' => 'ca',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.6',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.6',
                         'value' => 'zh',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.7',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.7',
                         'value' => 'zh-cn',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.8',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.8',
                         'value' => 'hr',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.9',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.9',
                         'value' => 'cs',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.10',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.10',
                         'value' => 'nl',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.11',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.11',
                         'value' => 'hu',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.12',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.12',
                         'value' => 'it',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.13',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.13',
                         'value' => 'ja',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.14',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.14',
                         'value' => 'ko',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.15',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.15',
                         'value' => 'ms',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.16',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.16',
                         'value' => 'fa',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.17',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.17',
                         'value' => 'pl',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.18',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.18',
                         'value' => 'pt',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.19',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.19',
                         'value' => 'ro',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.20',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.20',
                         'value' => 'ru',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.21',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.21',
                         'value' => 'sk',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.22',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.22',
                         'value' => 'sv',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.23',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.23',
                         'value' => 'tr',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.24',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.24',
                         'value' => 'uk',
                     ],
                 ],
@@ -189,7 +191,7 @@ call_user_func(function () {
                 'type'       => 'select',
             ],
             'exclude' => '1',
-            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language',
+            'label'   => $llFile . 'tt_content.tx_a11ymevideo_language',
         ],
         'tx_a11ymevideo_mp4'                   => [
             'config'      => [
@@ -198,18 +200,18 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '1',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_mp4_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_mp4',
         ],
         'tx_a11ymevideo_mp4link'               => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4link_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_mp4link_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4link',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_mp4link',
         ],
         'tx_a11ymevideo_posterimg'             => [
             'config'      => [
@@ -218,9 +220,9 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_posterimg_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_posterimg',
         ],
         'tx_a11ymevideo_signlanguage'          => [
             'config'      => [
@@ -229,9 +231,9 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguage_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_signlanguage',
         ],
         'tx_a11ymevideo_signlanguage_webm'     => [
             'config'      => [
@@ -240,27 +242,27 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_webm_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguage_webm_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_webm',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_signlanguage_webm',
         ],
         'tx_a11ymevideo_signlanguagelink'      => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink',
         ],
         'tx_a11ymevideo_signlanguagelink_webm' => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_webm_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink_webm_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_webm',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink_webm',
         ],
         'tx_a11ymevideo_videooptions'          => [
             'config'  => [
@@ -270,13 +272,13 @@ call_user_func(function () {
                 'default'   => '0',
                 'items'     => [
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videooptions.I.0',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videooptions.I.0',
                     ],
                 ],
                 'type'      => 'check',
             ],
             'exclude' => '1',
-            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videooptions',
+            'label'   => $llFile . 'tt_content.tx_a11ymevideo_videooptions',
         ],
         'tx_a11ymevideo_videoposition'         => [
             'config'  => [
@@ -286,19 +288,19 @@ call_user_func(function () {
                 ],
                 'items'       => [
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition.I.0',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videoposition.I.0',
                         'value' => '2',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition.I.1',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videoposition.I.1',
                         'value' => '3',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition.I.2',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videoposition.I.2',
                         'value' => '0',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition.I.3',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videoposition.I.3',
                         'value' => '1',
                     ],
                 ],
@@ -307,7 +309,7 @@ call_user_func(function () {
                 'type'        => 'select',
             ],
             'exclude' => '1',
-            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition',
+            'label'   => $llFile . 'tt_content.tx_a11ymevideo_videoposition',
         ],
         'tx_a11ymevideo_videowidth'            => [
             'config'  => [
@@ -317,11 +319,11 @@ call_user_func(function () {
                 ],
                 'items'       => [
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videowidth.I.0',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videowidth.I.0',
                         'value' => '1',
                     ],
                     [
-                        'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videowidth.I.1',
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videowidth.I.1',
                         'value' => '0',
                     ],
                 ],
@@ -330,7 +332,7 @@ call_user_func(function () {
                 'type'        => 'select',
             ],
             'exclude' => '1',
-            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videowidth',
+            'label'   => $llFile . 'tt_content.tx_a11ymevideo_videowidth',
         ],
         'tx_a11ymevideo_webm'                  => [
             'config'      => [
@@ -339,32 +341,32 @@ call_user_func(function () {
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webm_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_webm_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webm',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_webm',
         ],
         'tx_a11ymevideo_webmlink'              => [
             'config'      => [
                 'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
-            'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webmlink_description',
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_webmlink_description',
             'exclude'     => '1',
-            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webmlink',
+            'label'       => $llFile . 'tt_content.tx_a11ymevideo_webmlink',
         ],
     ];
     ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.CType.div._a11ymevideo_',
+        $llFile . 'tt_content.CType.div._a11ymevideo_',
         '--div--',
     ];
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.CType.a11ymevideo_videoplayer',
+        $llFile . 'tt_content.CType.a11ymevideo_videoplayer',
         'a11ymevideo_videoplayer',
         'tx_a11ymevideo_videoplayer',
     ];
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.CType.a11ymevideo_videoplayer2',
+        $llFile . 'tt_content.CType.a11ymevideo_videoplayer2',
         'a11ymevideo_videoplayer2',
         'tx_a11ymevideo_videoplayer2',
     ];
