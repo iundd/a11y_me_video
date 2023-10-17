@@ -1,5 +1,12 @@
-mod.wizards.newContentElement.wizardItems.common {
-    elements {
+mod {
+    web_layout.tt_content.preview.a11ymevideo {
+        templateRootPath = EXT:a11y_me_video/Resources/Private/Backend/Templates/Content/
+        layoutRootPath = EXT:a11y_me_video/Resources/Private/Backend/Layout/
+        partialRootPath = EXT:a11y_me_video/Resources/Private/Backend/Partials/
+    }
+
+    wizards.newContentElement.wizardItems.common {
+        elements {
             videoplayer {
                 iconIdentifier = tx_a11ymevideo_videoplayer
                 title = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer_title
@@ -16,6 +23,7 @@ mod.wizards.newContentElement.wizardItems.common {
                     CType = a11ymevideo_videoplayer2
                 }
             }
+        }
+        show := addToList(videoplayer, videoplayer2)
     }
-    show := addToList(videoplayer, videoplayer2)
 }
