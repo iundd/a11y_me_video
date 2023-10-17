@@ -1,6 +1,8 @@
 <?php
 
-$config = \TYPO3\CodingStandards\CsFixerConfig::create();
+use TYPO3\CodingStandards\CsFixerConfig;
+use PhpCsFixer\Finder;
+$config = CsFixerConfig::create();
 $config->setHeader(
     'This file is part of the "a11y_me_video" Extension for TYPO3 CMS.
 
@@ -9,15 +11,16 @@ LICENSE file that was distributed with this source code.',
     true
 );
 $config->setFinder(
-    (new PhpCsFixer\Finder())
-        ->in(realpath(__DIR__ . '/../../'))
+    (new Finder())
+        ->in(getcwd())
         ->ignoreVCSIgnored(true)
         ->notPath('/^.Build\//')
-        ->notPath('/^Build\/php-cs-fixer\/php-cs-fixer.php/')
-        ->notPath('/^Build\/phpunit\/(UnitTestsBootstrap|FunctionalTestsBootstrap).php/')
-        ->notPath('/^Configuration\//')
+        ->notPath('/^config\//')
+        ->notPath('/^var\//')
+        ->notPath('/^Build\//')
+        //->notPath('/^Configuration\//')
         ->notPath('/^Documentation\//')
-        ->notName('/^ext_(emconf|localconf|tables).php/')
+        //->notName('/^ext_(emconf|localconf|tables).php/')
 )
     ->setRiskyAllowed(true)
     ->setRules([
@@ -27,16 +30,15 @@ $config->setFinder(
         'blank_line_after_opening_tag' => true,
         'braces' => ['allow_single_line_closure' => true],
         'cast_spaces' => ['space' => 'none'],
-        'compact_nullable_typehint' => true,
+        'compact_nullable_type_declaration' => true,
         'concat_space' => ['spacing' => 'one'],
         'declare_equal_normalize' => ['space' => 'none'],
         'dir_constant' => true,
-        'function_typehint_space' => true,
         'lowercase_cast' => true,
         'method_argument_space' => ['on_multiline' => 'ensure_fully_multiline'],
         'modernize_types_casting' => true,
         'native_function_casing' => true,
-        'new_with_braces' => true,
+        'new_with_parentheses' => true,
         'no_alias_functions' => true,
         'no_blank_lines_after_phpdoc' => true,
         'no_empty_phpdoc' => true,
@@ -70,6 +72,7 @@ $config->setFinder(
         'single_line_comment_style' => ['comment_types' => ['hash']],
         'single_trait_insert_per_statement' => true,
         'trailing_comma_in_multiline' => ['elements' => ['arrays']],
+        'type_declaration_spaces' => true,
         'whitespace_after_comma_in_array' => ['ensure_single_space' => true],
         'yoda_style' => ['equal' => false, 'identical' => false, 'less_and_greater' => false],
     ]);

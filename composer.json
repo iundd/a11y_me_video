@@ -67,7 +67,7 @@
         }
     },
     "scripts": {
-        "codestyle:check": "php ./.Build/bin/php-cs-fixer fix  --dry-run -v --config ./Build/php-cs-fixer/php-cs-fixer.php ./",
-        "codestyle:fix": "php ./.Build/bin/php-cs-fixer fix  -v --config ./Build/php-cs-fixer/php-cs-fixer.php ./"
+        "codestyle:check": "php ./.Build/bin/php-cs-fixer fix  --dry-run -v --config ./Build/php-cs-fixer/php-cs-fixer.php",
+        "codestyle:fix": "php ./.Build/bin/php-cs-fixer fix  -v --config ./Build/php-cs-fixer/php-cs-fixer.php"
     }
 }
