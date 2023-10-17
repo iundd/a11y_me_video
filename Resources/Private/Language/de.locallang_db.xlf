@@ -87,103 +87,103 @@
         <source>Readable for screen readers only</source>
         <target>Nur lesbar für Screenreader</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.0">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.default">
         <source>Default</source>
         <target>Standard</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.1">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.en">
         <source>English</source>
         <target>Englisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.2">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.fr">
         <source>French</source>
         <target>Französisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.3">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.de">
         <source>German</source>
         <target>Deutsch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.4">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.es">
         <source>Spanish</source>
         <target>Spanisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.5">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.ca">
         <source>Catalan</source>
         <target>Katalanisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.6">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.zh">
         <source>Chinese (Traditional)</source>
         <target>Chinesisch (Traditionell)</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.7">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.zh-cn">
         <source>Chinese (Simplified)</source>
         <target>Chinesisch (Vereinfacht)</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.8">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.hr">
         <source>Croatian</source>
         <target>Kroatisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.9">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.cs">
         <source>Czech</source>
         <target>Tschechisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.10">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.nl">
         <source>Dutch</source>
         <target>Niederländisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.11">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.hu">
         <source>Hungarian</source>
         <target>Ungarisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.12">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.it">
         <source>Italian</source>
         <target>Italienisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.13">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.ja">
         <source>Japanese</source>
         <target>Japanisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.14">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.ko">
         <source>Korean</source>
         <target>Koreanisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.15">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.ms">
         <source>Malay</source>
         <target>Malaysisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.16">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.fa">
         <source>Persian</source>
         <target>Persisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.17">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.pl">
         <source>Polish</source>
         <target>Polnisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.18">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.pt">
         <source>Portuguese</source>
         <target>Portugiesisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.19">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.ro">
         <source>Romanian</source>
         <target>Rumänisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.20">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.ru">
         <source>Russian</source>
         <target>Russisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.21">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.sk">
         <source>Slovak</source>
         <target>Slovakisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.22">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.sv">
         <source>Swedish</source>
         <target>Schwedisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.23">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.tr">
         <source>Turkish</source>
         <target>Türkisch</target>
       </trans-unit>
-      <trans-unit id="tt_content.tx_a11ymevideo_language.I.24">
+      <trans-unit id="tt_content.tx_a11ymevideo_language.I.uk">
         <source>Ukrainian</source>
         <target>Ukrainisch</target>
       </trans-unit>

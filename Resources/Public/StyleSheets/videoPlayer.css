@@ -141,7 +141,7 @@
 }
 
 .mejs__overlay-button {
-  background: url(/typo3conf/ext/a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mejs-controls.svg) no-repeat;
+  background: url(../JavaScript/Vendor/mediaelement/build/mejs-controls.svg) no-repeat;
   background-position: 0 -39px;
   height: 80px;
   width: 80px;
@@ -159,7 +159,7 @@
 .mejs__overlay-loading-bg-img {
   -webkit-animation: mejs__loading-spinner 1s linear infinite;
           animation: mejs__loading-spinner 1s linear infinite;
-  background: transparent url(/typo3conf/ext/a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mejs-controls.svg) -160px -40px no-repeat;
+  background: transparent url(../JavaScript/Vendor/mediaelement/build/mejs-controls.svg) -160px -40px no-repeat;
   display: block;
   height: 80px;
   width: 80px;
@@ -208,7 +208,7 @@
 }
 
 .mejs__button > button {
-  background: transparent url(/typo3conf/ext/a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement/build/mejs-controls.svg);
+  background: transparent url(../JavaScript/Vendor/mediaelement/build/mejs-controls.svg);
   border: 0;
   cursor: pointer;
   display: block;
@@ -736,12 +736,12 @@
 
 .mejs-video-description-button > button,
 .mejs__video-description-button > button {
-  background-image: url("/typo3conf/ext/a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/video-description-icon.svg");
+  background-image: url("../JavaScript/Vendor/mediaelement-plugins/dist/a11y/video-description-icon.svg");
 }
 
 .mejs-audio-description-button > button,
 .mejs__audio-description-button > button {
-  background-image: url("/typo3conf/ext/a11y_me_video/Resources/Public/JavaScript/Vendor/mediaelement-plugins/dist/a11y/audio-description-icon.svg");
+  background-image: url("../JavaScript/Vendor/mediaelement-plugins/dist/a11y/audio-description-icon.svg");
 }
 
 .mejs-volume-button.hidden,
