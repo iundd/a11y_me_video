@@ -1,33 +1,26 @@
 <?php
-namespace iundd\A11yMeVideo\Hooks;
+namespace iundd\A11yMeVideo\EventListener;
 
 use TYPO3\CMS\Backend\Form\Exception;
 use TYPO3\CMS\Backend\Form\FormDataCompiler;
 use TYPO3\CMS\Backend\Form\FormDataGroup\TcaDatabaseRecord;
+use TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent;
 use TYPO3\CMS\Backend\View\PageLayoutView;
 use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 
-class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
+class VideoPlayerPreview
 {
     /**
      * @var array
      */
     protected $supportedContentTypes = [
-    'a11ymevideo_videoplayer' => 'Videoplayer',
-    'a11ymevideo_videoplayer2' => 'Videoplayer2',
-];
+        'a11ymevideo_videoplayer' => 'Videoplayer',
+        'a11ymevideo_videoplayer2' => 'Videoplayer2',
+    ];
 
-    /**
-     * @var StandaloneView
-     */
-    protected $view;
-
-    public function __construct(StandaloneView $view = null)
-    {
-        $this->view = $view ?: GeneralUtility::makeInstance(StandaloneView::class);
-    }
+    protected StandaloneView $view;
 
     /**
      * Preprocesses the preview rendering of a content element.
@@ -38,9 +31,11 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
      * @param string $itemContent
      * @param array $row
      */
-    public function preProcess(PageLayoutView &$parentObject, &$drawItem, &$headerContent, &$itemContent, array &$row)
+    public function __invoke(PageContentPreviewRenderingEvent $event)
     {
-        if (!isset($this->supportedContentTypes[$row['CType']])) {
+        $row = $event->getRecord();
+
+        if (!isset($this->supportedContentTypes[$row['CType'] ?? ''])) {
             return;
         }
         
@@ -62,18 +57,16 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
                     'processedRow' => $processedRow,
                 ]
             );
-    
-            $itemContent = $this->view->render();
+
+            $event->setPreviewContent($this->view->render());
         } catch (Exception $exception) {
             $message = $GLOBALS['BE_USER']->errorMsg;
             if (empty($message)) {
                 $message = $exception->getMessage() . ' ' . $exception->getCode();
             }
 
-            $itemContent = $message;
+            $event->setPreviewContent($message);
         }
-        
-        $drawItem = false;
     }
 
     /**
@@ -82,6 +75,8 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
      */
     protected function configureView(array $pageTsConfig, $contentType)
     {
+        $this->view = GeneralUtility::makeInstance(StandaloneView::class);
+
         if (empty($pageTsConfig['mod.']['web_layout.']['tt_content.']['preview.'])) {
             return;
         }

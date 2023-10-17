@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+  iundd\A11yMeVideo\:
+    resource: '../Classes/*'
+
+
+  iundd\A11yMeVideo\EventListener\VideoPlayerPreview:
+    tags:
+      - name: event.listener
+        identifier: 'sitepackagebase/preview-rendering/contentelement'
