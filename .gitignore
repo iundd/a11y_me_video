@@ -1,0 +1,15 @@
+/.Build
+/.cache
+/composer.lock
+/config/
+/.php_cs.cache
+/.php_cs-fixer.cache
+/Documentation-GENERATED-temp
+/Resources/Private/Templates/News/Month.html
+/Resources/Private/Templates/Styles/Twb/Templates/News/Month.html
+/out.txt
+/Tests/Build/.phpunit.result.cache
+.DS_Store
+.idea/
+.fleet/
+/var
