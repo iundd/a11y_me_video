@@ -34,7 +34,6 @@
         "typo3/cms-extbase": "^12.4",
         "typo3/cms-fluid": "^12.4",
         "typo3/cms-frontend": "^12.4",
-        "friendsoftypo3/fontawesome-provider": "^1.0",
         "typo3/cms-filelist": "^12.4"
     },
     "require-dev": {
