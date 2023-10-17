@@ -1,8 +1,8 @@
 <?php
+
 defined('TYPO3') || die();
 
 call_user_func(function () {
-
     // Register content element icons
     $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
     $iconRegistry->registerIcon(

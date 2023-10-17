@@ -5,7 +5,6 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 defined('TYPO3') || die();
 
 call_user_func(function () {
-
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer']  = 'tx_a11ymevideo_videoplayer';
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer2'] = 'tx_a11ymevideo_videoplayer2';
     $tempColumns                                                                          = [
@@ -397,5 +396,4 @@ call_user_func(function () {
         'Configuration/TypoScript/',
         'a11y_me_video'
     );
-
 });

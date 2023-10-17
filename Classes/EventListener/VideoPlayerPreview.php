@@ -1,4 +1,5 @@
 <?php
+
 namespace iundd\A11yMeVideo\EventListener;
 
 use TYPO3\CMS\Backend\Form\Exception;
@@ -6,7 +7,6 @@ use TYPO3\CMS\Backend\Form\FormDataCompiler;
 use TYPO3\CMS\Backend\Form\FormDataGroup\TcaDatabaseRecord;
 use TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent;
 use TYPO3\CMS\Backend\View\PageLayoutView;
-use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 
@@ -25,11 +25,7 @@ class VideoPlayerPreview
     /**
      * Preprocesses the preview rendering of a content element.
      *
-     * @param PageLayoutView $parentObject
-     * @param bool $drawItem
-     * @param string $headerContent
-     * @param string $itemContent
-     * @param array $row
+     * @param PageContentPreviewRenderingEvent $event
      */
     public function __invoke(PageContentPreviewRenderingEvent $event)
     {
@@ -38,7 +34,7 @@ class VideoPlayerPreview
         if (!isset($this->supportedContentTypes[$row['CType'] ?? ''])) {
             return;
         }
-        
+
         $formDataGroup = GeneralUtility::makeInstance(TcaDatabaseRecord::class);
         $formDataCompiler = GeneralUtility::makeInstance(FormDataCompiler::class, $formDataGroup);
         $formDataCompilerInput = [
@@ -49,7 +45,7 @@ class VideoPlayerPreview
         try {
             $result = $formDataCompiler->compile($formDataCompilerInput);
             $processedRow = $this->getProcessedData($result['databaseRow'], $result['processedTca']['columns']);
-            
+
             $this->configureView($result['pageTsConfig'], $row['CType']);
             $this->view->assignMultiple(
                 [
