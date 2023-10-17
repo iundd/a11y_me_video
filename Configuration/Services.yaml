@@ -10,4 +10,4 @@ services:
   iundd\A11yMeVideo\EventListener\VideoPlayerPreview:
     tags:
       - name: event.listener
-        identifier: 'sitepackagebase/preview-rendering/contentelement'
+        identifier: 'a11y-me-video/preview-rendering/contentelement'
