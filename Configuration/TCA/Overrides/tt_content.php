@@ -1,66 +1,69 @@
 <?php
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') || die();
 
 call_user_func(function () {
 
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer'] = 'tx_a11ymevideo_videoplayer';
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer']  = 'tx_a11ymevideo_videoplayer';
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer2'] = 'tx_a11ymevideo_videoplayer2';
-    $tempColumns = [
-        'tx_a11ymevideo_audiodescription' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => ['mp3'],
+    $tempColumns                                                                          = [
+        'tx_a11ymevideo_audiodescription'      => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => ['mp3'],
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescription_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescription',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescription',
         ],
-        'tx_a11ymevideo_audiodescriptionlink' => [
-            'config' => [
-                'type' => 'link',
+        'tx_a11ymevideo_audiodescriptionlink'  => [
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescriptionlink_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescriptionlink',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_audiodescriptionlink',
         ],
-        'tx_a11ymevideo_captions' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => ['vtt'],
+        'tx_a11ymevideo_captions'              => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => ['vtt'],
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captions_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captions',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captions',
         ],
-        'tx_a11ymevideo_captionslink' => [
-            'config' => [
-                'type' => 'link',
+        'tx_a11ymevideo_captionslink'          => [
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captionslink_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captionslink',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_captionslink',
         ],
-        'tx_a11ymevideo_fulltextalternative' => [
-            'config' => [
-                'type' => 'link',
+        'tx_a11ymevideo_fulltextalternative'   => [
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['page', 'url', 'record'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_fulltextalternative',
         ],
-        'tx_a11ymevideo_header_visibility' => [
-            'config' => [
-                'behaviour' => [
+        'tx_a11ymevideo_header_visibility'     => [
+            'config'  => [
+                'behaviour'  => [
                     'allowLanguageSynchronization' => '0',
                 ],
-                'items' => [
+                'items'      => [
                     [
                         'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_header_visibility.I.0',
                         'value' => '0',
@@ -71,17 +74,17 @@ call_user_func(function () {
                     ],
                 ],
                 'renderType' => 'selectSingle',
-                'type' => 'select',
+                'type'       => 'select',
             ],
             'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_header_visibility',
+            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_header_visibility',
         ],
-        'tx_a11ymevideo_language' => [
-            'config' => [
-                'behaviour' => [
+        'tx_a11ymevideo_language'              => [
+            'config'  => [
+                'behaviour'  => [
                     'allowLanguageSynchronization' => '0',
                 ],
-                'items' => [
+                'items'      => [
                     [
                         'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language.I.0',
                         'value' => 'default',
@@ -184,105 +187,105 @@ call_user_func(function () {
                     ],
                 ],
                 'renderType' => 'selectSingle',
-                'type' => 'select',
+                'type'       => 'select',
             ],
             'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language',
+            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_language',
         ],
-        'tx_a11ymevideo_mp4' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => ['mp4'],
+        'tx_a11ymevideo_mp4'                   => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => ['mp4'],
                 'maxitems' => '1',
                 'minitems' => '1',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4',
         ],
-        'tx_a11ymevideo_mp4link' => [
-            'config' => [
-                'type' => 'link',
+        'tx_a11ymevideo_mp4link'               => [
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4link_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4link',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mp4link',
         ],
-        'tx_a11ymevideo_posterimg' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => 'common-image-types',
+        'tx_a11ymevideo_posterimg'             => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => 'common-image-types',
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_posterimg',
         ],
-        'tx_a11ymevideo_signlanguage' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => ['mp4'],
+        'tx_a11ymevideo_signlanguage'          => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => ['mp4'],
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage',
         ],
-        'tx_a11ymevideo_signlanguage_webm' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => ['webm'],
+        'tx_a11ymevideo_signlanguage_webm'     => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => ['webm'],
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_webm_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_webm',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguage_webm',
         ],
-        'tx_a11ymevideo_signlanguagelink' => [
-            'config' => [
-                'type' => 'link',
+        'tx_a11ymevideo_signlanguagelink'      => [
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink',
         ],
         'tx_a11ymevideo_signlanguagelink_webm' => [
-            'config' => [
-                'type' => 'link',
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_webm_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_webm',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_signlanguagelink_webm',
         ],
-        'tx_a11ymevideo_videooptions' => [
-            'config' => [
+        'tx_a11ymevideo_videooptions'          => [
+            'config'  => [
                 'behaviour' => [
                     'allowLanguageSynchronization' => '0',
                 ],
-                'default' => '0',
-                'items' => [
+                'default'   => '0',
+                'items'     => [
                     [
                         'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videooptions.I.0',
                     ],
                 ],
-                'type' => 'check',
+                'type'      => 'check',
             ],
             'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videooptions',
+            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videooptions',
         ],
-        'tx_a11ymevideo_videoposition' => [
-            'config' => [
+        'tx_a11ymevideo_videoposition'         => [
+            'config'  => [
                 'autoSizeMax' => '1',
-                'behaviour' => [
+                'behaviour'   => [
                     'allowLanguageSynchronization' => '0',
                 ],
-                'items' => [
+                'items'       => [
                     [
                         'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition.I.0',
                         'value' => '2',
@@ -300,20 +303,20 @@ call_user_func(function () {
                         'value' => '1',
                     ],
                 ],
-                'maxitems' => '1',
-                'renderType' => 'selectSingle',
-                'type' => 'select',
+                'maxitems'    => '1',
+                'renderType'  => 'selectSingle',
+                'type'        => 'select',
             ],
             'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition',
+            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videoposition',
         ],
-        'tx_a11ymevideo_videowidth' => [
-            'config' => [
+        'tx_a11ymevideo_videowidth'            => [
+            'config'  => [
                 'autoSizeMax' => '1',
-                'behaviour' => [
+                'behaviour'   => [
                     'allowLanguageSynchronization' => '0',
                 ],
-                'items' => [
+                'items'       => [
                     [
                         'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videowidth.I.0',
                         'value' => '1',
@@ -323,35 +326,35 @@ call_user_func(function () {
                         'value' => '0',
                     ],
                 ],
-                'maxitems' => '1',
-                'renderType' => 'selectSingle',
-                'type' => 'select',
+                'maxitems'    => '1',
+                'renderType'  => 'selectSingle',
+                'type'        => 'select',
             ],
             'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videowidth',
+            'label'   => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_videowidth',
         ],
-        'tx_a11ymevideo_webm' => [
-            'config' => [
-                'type' => 'file',
-                'allowed' => ['webm'],
+        'tx_a11ymevideo_webm'                  => [
+            'config'      => [
+                'type'     => 'file',
+                'allowed'  => ['webm'],
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webm_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webm',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webm',
         ],
-        'tx_a11ymevideo_webmlink' => [
-            'config' => [
-                'type' => 'link',
+        'tx_a11ymevideo_webmlink'              => [
+            'config'      => [
+                'type'         => 'link',
                 'allowedTypes' => ['file'],
             ],
             'description' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webmlink_description',
-            'exclude' => '1',
-            'label' => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webmlink',
+            'exclude'     => '1',
+            'label'       => 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_webmlink',
         ],
     ];
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
+    ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
         'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.CType.div._a11ymevideo_',
         '--div--',
@@ -366,8 +369,8 @@ call_user_func(function () {
         'a11ymevideo_videoplayer2',
         'tx_a11ymevideo_videoplayer2',
     ];
-    $tempTypes = [
-        'a11ymevideo_videoplayer' => [
+    $tempTypes                                                             = [
+        'a11ymevideo_videoplayer'  => [
             'columnsOverrides' => [
                 'bodytext' => [
                     'config' => [
@@ -375,7 +378,7 @@ call_user_func(function () {
                     ],
                 ],
             ],
-            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,header_layout,header_position,tx_a11ymevideo_header_visibility,date,header_link,subheader,bodytext,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mainvideo_tab,tx_a11ymevideo_language,tx_a11ymevideo_videoposition,tx_a11ymevideo_videowidth,tx_a11ymevideo_posterimg,tx_a11ymevideo_mp4,tx_a11ymevideo_webm,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_accessibility_tab,tx_a11ymevideo_captions,tx_a11ymevideo_signlanguage,tx_a11ymevideo_signlanguage_webm,tx_a11ymevideo_audiodescription,tx_a11ymevideo_fulltextalternative,tx_a11ymevideo_videooptions,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, --palette--;LLL:EXT:site_package_base/Resources/Private/Language/Database.xlf:tt_content.site_package_base_device_visibility_palette;site_package_base_device_visibility_palette,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+            'showitem'         => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,header_layout,header_position,tx_a11ymevideo_header_visibility,date,header_link,subheader,bodytext,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mainvideo_tab,tx_a11ymevideo_language,tx_a11ymevideo_videoposition,tx_a11ymevideo_videowidth,tx_a11ymevideo_posterimg,tx_a11ymevideo_mp4,tx_a11ymevideo_webm,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_accessibility_tab,tx_a11ymevideo_captions,tx_a11ymevideo_signlanguage,tx_a11ymevideo_signlanguage_webm,tx_a11ymevideo_audiodescription,tx_a11ymevideo_fulltextalternative,tx_a11ymevideo_videooptions,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, --palette--;LLL:EXT:site_package_base/Resources/Private/Language/Database.xlf:tt_content.site_package_base_device_visibility_palette;site_package_base_device_visibility_palette,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
         ],
         'a11ymevideo_videoplayer2' => [
             'columnsOverrides' => [
@@ -385,11 +388,11 @@ call_user_func(function () {
                     ],
                 ],
             ],
-            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,header_layout,header_position,tx_a11ymevideo_header_visibility,date,header_link,subheader,bodytext,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mainvideo_tab,tx_a11ymevideo_language,tx_a11ymevideo_videoposition,tx_a11ymevideo_videowidth,tx_a11ymevideo_posterimg,tx_a11ymevideo_mp4link,tx_a11ymevideo_webmlink,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_accessibility_tab,tx_a11ymevideo_captionslink,tx_a11ymevideo_signlanguagelink,tx_a11ymevideo_signlanguagelink_webm,tx_a11ymevideo_audiodescriptionlink,tx_a11ymevideo_fulltextalternative,tx_a11ymevideo_videooptions,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, --palette--;LLL:EXT:site_package_base/Resources/Private/Language/Database.xlf:tt_content.site_package_base_device_visibility_palette;site_package_base_device_visibility_palette,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+            'showitem'         => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,header_layout,header_position,tx_a11ymevideo_header_visibility,date,header_link,subheader,bodytext,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mainvideo_tab,tx_a11ymevideo_language,tx_a11ymevideo_videoposition,tx_a11ymevideo_videowidth,tx_a11ymevideo_posterimg,tx_a11ymevideo_mp4link,tx_a11ymevideo_webmlink,--div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_accessibility_tab,tx_a11ymevideo_captionslink,tx_a11ymevideo_signlanguagelink,tx_a11ymevideo_signlanguagelink_webm,tx_a11ymevideo_audiodescriptionlink,tx_a11ymevideo_fulltextalternative,tx_a11ymevideo_videooptions,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, --palette--;LLL:EXT:site_package_base/Resources/Private/Language/Database.xlf:tt_content.site_package_base_device_visibility_palette;site_package_base_device_visibility_palette,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
         ],
     ];
-    $GLOBALS['TCA']['tt_content']['types'] += $tempTypes;
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    $GLOBALS['TCA']['tt_content']['types']                                 += $tempTypes;
+    ExtensionManagementUtility::addStaticFile(
         'a11y_me_video',
         'Configuration/TypoScript/',
         'a11y_me_video'
