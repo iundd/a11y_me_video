@@ -266,20 +266,42 @@ call_user_func(function () {
     ];
     ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
 
-    $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItemGroup(
+        'tt_content',
+        'CType',
+        'a11y_me_video',
         $llFile . 'tt_content.CType.div._a11ymevideo_',
-        '--div--',
-    ];
-    $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        $llFile . 'tt_content.CType.a11ymevideo_videoplayer',
-        'a11ymevideo_videoplayer',
-        'tx_a11ymevideo_videoplayer',
-    ];
-    $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        $llFile . 'tt_content.CType.a11ymevideo_videoplayer2',
-        'a11ymevideo_videoplayer2',
-        'tx_a11ymevideo_videoplayer2',
-    ];
+    );
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        [
+            // title
+            $llFile . 'tt_content.CType.a11ymevideo_videoplayer',
+            // plugin signature: extkey_identifier
+            'a11ymevideo_videoplayer',
+            // icon identifier
+            'tx_a11ymevideo_videoplayer',
+            'a11y_me_video',
+        ],
+        'textmedia',
+        'after'
+    );
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        [
+            // title
+            $llFile . 'tt_content.CType.a11ymevideo_videoplayer2',
+            // plugin signature: extkey_identifier
+            'a11ymevideo_videoplayer2',
+            // icon identifier
+            'tx_a11ymevideo_videoplayer',
+            'a11y_me_video',
+        ],
+        'textmedia',
+        'after'
+    );
 
     $tempTypes                                                             = [
         'a11ymevideo_videoplayer'  => [

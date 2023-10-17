@@ -164,7 +164,7 @@
         <source>100%</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.div._a11ymevideo_">
-        <source>a11y_me_video</source>
+        <source>a11y me video</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.a11ymevideo_videoplayer">
         <source>A11y Video Player &amp; Text</source>

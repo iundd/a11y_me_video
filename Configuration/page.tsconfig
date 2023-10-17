@@ -16,7 +16,7 @@ mod {
                 }
             }
             videoplayer2 {
-                iconIdentifier = tx_a11ymevideo_videoplayer2
+                iconIdentifier = tx_a11ymevideo_videoplayer
                 title = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer2_title
                 description = LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.videoplayer2_description
                 tt_content_defValues {
