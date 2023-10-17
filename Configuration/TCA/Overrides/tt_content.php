@@ -7,6 +7,15 @@ defined('TYPO3') || die();
 call_user_func(function () {
     $llFile = 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:';
 
+    $availableLanguages = [];
+    foreach (['default', 'en', 'fr', 'de', 'es', 'ca', 'zh', 'zh-cn', 'hr', 'cs', 'nl', 'hu', 'it', 'ja', 'ko', 'ms', 'fa', 'pl', 'pt', 'ro', 'ru', 'sk', 'sv', 'tr', 'uk']
+             as $identifier) {
+        $availableLanguages[] = [
+            'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.' . $identifier,
+            'value' => $identifier,
+        ];
+    }
+
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer']  = 'tx_a11ymevideo_videoplayer';
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer2'] = 'tx_a11ymevideo_videoplayer';
     $tempColumns                                                                          = [
@@ -85,108 +94,7 @@ call_user_func(function () {
                 'behaviour'  => [
                     'allowLanguageSynchronization' => '0',
                 ],
-                'items'      => [
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.0',
-                        'value' => 'default',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.1',
-                        'value' => 'en',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.2',
-                        'value' => 'fr',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.3',
-                        'value' => 'de',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.4',
-                        'value' => 'es',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.5',
-                        'value' => 'ca',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.6',
-                        'value' => 'zh',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.7',
-                        'value' => 'zh-cn',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.8',
-                        'value' => 'hr',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.9',
-                        'value' => 'cs',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.10',
-                        'value' => 'nl',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.11',
-                        'value' => 'hu',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.12',
-                        'value' => 'it',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.13',
-                        'value' => 'ja',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.14',
-                        'value' => 'ko',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.15',
-                        'value' => 'ms',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.16',
-                        'value' => 'fa',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.17',
-                        'value' => 'pl',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.18',
-                        'value' => 'pt',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.19',
-                        'value' => 'ro',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.20',
-                        'value' => 'ru',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.21',
-                        'value' => 'sk',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.22',
-                        'value' => 'sv',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.23',
-                        'value' => 'tr',
-                    ],
-                    [
-                        'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.24',
-                        'value' => 'uk',
-                    ],
-                ],
+                'items'      => $availableLanguages,
                 'renderType' => 'selectSingle',
                 'type'       => 'select',
             ],
