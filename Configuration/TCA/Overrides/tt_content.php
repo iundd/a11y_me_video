@@ -18,6 +18,7 @@ call_user_func(function () {
 
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer']  = 'tx_a11ymevideo_videoplayer';
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['a11ymevideo_videoplayer2'] = 'tx_a11ymevideo_videoplayer';
+
     $tempColumns                                                                          = [
         'tx_a11ymevideo_audiodescription'      => [
             'config'      => [
@@ -264,6 +265,7 @@ call_user_func(function () {
         ],
     ];
     ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
+
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
         $llFile . 'tt_content.CType.div._a11ymevideo_',
         '--div--',
@@ -278,6 +280,7 @@ call_user_func(function () {
         'a11ymevideo_videoplayer2',
         'tx_a11ymevideo_videoplayer2',
     ];
+
     $tempTypes                                                             = [
         'a11ymevideo_videoplayer'  => [
             'columnsOverrides' => [
@@ -341,7 +344,9 @@ call_user_func(function () {
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
         ],
     ];
+
     $GLOBALS['TCA']['tt_content']['types']                                 += $tempTypes;
+
     ExtensionManagementUtility::addStaticFile(
         'a11y_me_video',
         'Configuration/TypoScript/',
