@@ -34,7 +34,11 @@ call_user_func(function () {
         'tx_a11ymevideo_audiodescriptionlink'  => [
             'config'      => [
                 'type'         => 'link',
-                'allowedTypes' => ['file'],
+                'allowedTypes' => ['file','url'],
+                'appearance' => [
+                    'browserTitle' => $llFile . 'tt_content.tx_a11ymevideo_audiodescriptionlink',
+                    'allowedExtensions' => ['mp3'],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_audiodescriptionlink_description',
             'exclude'     => '1',
@@ -54,7 +58,11 @@ call_user_func(function () {
         'tx_a11ymevideo_captionslink'          => [
             'config'      => [
                 'type'         => 'link',
-                'allowedTypes' => ['file'],
+                'allowedTypes' => ['file','url'],
+                'appearance' => [
+                    'browserTitle' => $llFile . 'tt_content.tx_a11ymevideo_captionslink',
+                    'allowedExtensions' => ['vtt'],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_captionslink_description',
             'exclude'     => '1',
@@ -116,7 +124,11 @@ call_user_func(function () {
         'tx_a11ymevideo_mp4link'               => [
             'config'      => [
                 'type'         => 'link',
-                'allowedTypes' => ['file'],
+                'allowedTypes' => ['file','url'],
+                'appearance' => [
+                    'browserTitle' => $llFile . 'tt_content.tx_a11ymevideo_mp4link',
+                    'allowedExtensions' => ['mp4'],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_mp4link_description',
             'exclude'     => '1',
@@ -158,7 +170,11 @@ call_user_func(function () {
         'tx_a11ymevideo_signlanguagelink'      => [
             'config'      => [
                 'type'         => 'link',
-                'allowedTypes' => ['file'],
+                'allowedTypes' => ['file','url'],
+                'appearance' => [
+                    'browserTitle' => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink',
+                    'allowedExtensions' => ['mp4'],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink_description',
             'exclude'     => '1',
@@ -167,7 +183,11 @@ call_user_func(function () {
         'tx_a11ymevideo_signlanguagelink_webm' => [
             'config'      => [
                 'type'         => 'link',
-                'allowedTypes' => ['file'],
+                'allowedTypes' => ['file','url'],
+                'appearance' => [
+                    'browserTitle' => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink_webm',
+                    'allowedExtensions' => ['webm'],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguagelink_webm_description',
             'exclude'     => '1',
@@ -257,7 +277,11 @@ call_user_func(function () {
         'tx_a11ymevideo_webmlink'              => [
             'config'      => [
                 'type'         => 'link',
-                'allowedTypes' => ['file'],
+                'allowedTypes' => ['file','url'],
+                'appearance' => [
+                    'browserTitle' => $llFile . 'tt_content.tx_a11ymevideo_webmlink',
+                    'allowedExtensions' => ['webm'],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_webmlink_description',
             'exclude'     => '1',
