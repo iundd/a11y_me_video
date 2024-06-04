@@ -22,10 +22,10 @@ Accessible video player based on MediaElement.js, A11y Plugin and Fluid
    Robert Pudenz
 
 :Company:
-   .i-D. internet + Design GmbH & Co. KG
+   dreistrom.land AG
 
 :E-Mail:
-   opensource@i-d.de
+   r.pudenz@dreistrom.land
 
 :Repository:
    `<https://github.com/iundd/a11y_me_video>`__
