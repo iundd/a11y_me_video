@@ -7,8 +7,8 @@ $EM_CONF[$_EXTKEY] =  [
   'author' => 'Robert Pudenz',
   'author_email' => 'r.pudenz@dreistrom.land',
   'author_company' => 'dreistrom.land AG',
-  'state' => 'beta',
-  'version' => '2.0.1',
+  'state' => 'stable',
+  'version' => '2.0.2',
   'constraints' =>
    [
     'depends' =>
