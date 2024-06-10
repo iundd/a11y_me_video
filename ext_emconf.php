@@ -5,10 +5,10 @@ $EM_CONF[$_EXTKEY] = array (
   'description' => 'Accessible video player based on MediaElement.js and A11y Plugin and Fluid. The new content elements support mp4, webm, subtitles, sign language video, audio description, poster image, text alternative, etc.',
   'category' => 'fe',
   'author' => 'Robert Pudenz',
-  'author_email' => 'opensource@i-d.de',
-  'author_company' => '.i-D. internet + Design GmbH & Co. KG',
-  'state' => 'beta',
-  'version' => '1.0.8',
+  'author_email' => 'r.pudenz@dreistrom.land',
+  'author_company' => 'dreistrom.land AG',
+  'state' => 'stable',
+  'version' => '1.0.10',
   'constraints' =>
   array (
     'depends' =>

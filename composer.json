@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Robert Pudenz",
-            "email": "opensource@i-d.de",
+            "email": "r.pudenz@dreistrom.land",
             "role": "Developer"
         }
     ],
@@ -25,7 +25,7 @@
         "typo3/cms-frontend": "^10.4 || ^11.5"
     },
     "replace": {
-        "typo3-ter/a11y-me-video": "1.0.8"
+        "typo3-ter/a11y-me-video": "1.0.10"
     },
     "autoload": {
         "psr-4": {
