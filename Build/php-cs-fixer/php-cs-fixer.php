@@ -25,10 +25,10 @@ $config->setFinder(
     ->setRiskyAllowed(true)
     ->setRules([
         '@DoctrineAnnotation' => true,
-        '@PER' => true,
+        '@PER-CS' => true,
         'array_syntax' => ['syntax' => 'short'],
         'blank_line_after_opening_tag' => true,
-        'braces' => ['allow_single_line_closure' => true],
+        //'braces' => ['allow_single_line_closure' => true],
         'cast_spaces' => ['space' => 'none'],
         'compact_nullable_type_declaration' => true,
         'concat_space' => ['spacing' => 'one'],
