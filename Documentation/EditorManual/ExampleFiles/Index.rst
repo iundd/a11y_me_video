@@ -4,8 +4,10 @@
 Examples File
 =============
 
-Here you will find a few test files that you can use to test and better
-understand the function of the player.
+**Sorry. The old example files no longer exist. For a better understanding of the content requirements for the media
+files, you will find a similar video player on the following website:**
+
+`<https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreie-videos-fuer-alle.>`__
 
 The main video, the sign language video and the mp3 file with audio description
 must be in sync. This means that they all have the same timeline, so that you
@@ -19,31 +21,4 @@ track contains the original sound and additional text spoken by a narrator.
 Speech and audio gaps can be used to describe additional important visual
 information for blind and visually impaired people.
 
-**Warning**: Please use the files only for testing and not for publishing on
-your website. We have taken the following url addresses from the a11y-plugin's
-demo code and can therefore not provide any information about the copyright
-(`<https://github.com/mediaelement/mediaelement-plugins/blob/master/demo/a11y.html>`__).
-Use at your own risk.
 
-----
-
-Main video | mp4
-   `<https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_video.mp4>`__
-
-Main video | webm
-   `<https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_video.webm>`__
-
-Subtitles file | vtt:
-   `<https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel.vtt>`__
-
-   **Note:** Due to server policy, this URL cannot be used directly.
-   Save the file on your web server and integrate it locally.
-
-Video with sign language | mp4:
-   `<https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel_signlanguageVideo.mp4>`__
-
-Video with sign language | webm:
-   `<https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel_signlanguageVideo.webm>`__
-
-Audio description | mp3:
-   `<https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_audioDescription.mp3>`__
