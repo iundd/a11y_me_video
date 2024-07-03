@@ -229,6 +229,9 @@ call_user_func(function () {
                     [
                         'label' => $llFile . 'tt_content.tx_a11ymevideo_videooptions.I.0',
                     ],
+                    [
+                        'label' => $llFile . 'tt_content.tx_a11ymevideo_videooptions.I.1',
+                    ],
                 ],
                 'type' => 'check',
             ],
