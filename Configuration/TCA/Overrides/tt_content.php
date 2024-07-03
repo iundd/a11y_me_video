@@ -163,7 +163,7 @@ call_user_func(function () {
         'tx_a11ymevideo_posterimg' => [
             'config' => [
                 'type' => 'file',
-                'allowed' => 'common-image-types',
+                'allowed' => ['jpg', 'jpeg', 'png', 'gif'],
                 'maxitems' => '1',
                 'minitems' => '0',
             ],
