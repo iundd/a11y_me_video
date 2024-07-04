@@ -76,17 +76,13 @@ git clone https://github.com/iundd/a11y_me_video.git
 
 ### Preparation: Include static TypoScript
 
-The extension ships some TypoScript code which needs to be included.
+The extension requires some TypoScript code, which must be integrated.
 
 1. Switch to the root page of your site.
-
-2. Switch to the **Template module** and select *Info/Modify*.
-
-3. Press the link **Edit the whole template record** and switch to the tab *Includes*.
-
-4. Select **a11y_video_player** at the field *Include static (from extensions):*
-   
-   For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
+2. Switch to the **TypoScript module** and select the **TypoScript record**.
+3. Press the **Edit the whole template record** button and switch to the tab **Advanced Options**.
+4. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **a11y_me_video** to **Selected Items**.
+5. For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
 
 ![screen shot of including static TypeScript!](Documentation/Images/TemplateInclude.png)
 
@@ -101,7 +97,7 @@ This project uses [semantic versioning](https://semver.org) which means that
 *  **major updates** (e.g. 1.0.0 => 2.0.0) contain breaking changes which can be
    refactorings, features or bugfixes.
 
-
+Textalternative
 
 ## Configuration und Customisation
 
