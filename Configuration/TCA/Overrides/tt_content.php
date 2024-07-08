@@ -1,5 +1,6 @@
 <?php
 
+use TYPO3\CMS\Core\Resource\File;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') || die();
@@ -51,6 +52,13 @@ call_user_func(function () {
                 'allowed' => ['mp3'],
                 'maxitems' => '1',
                 'minitems' => '0',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_AUDIO => [
+                            'showitem' => '--palette--;;filePalette',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_audiodescription_description',
             'exclude' => '1',
@@ -75,6 +83,13 @@ call_user_func(function () {
                 'allowed' => ['vtt'],
                 'maxitems' => '1',
                 'minitems' => '0',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_TEXT => [
+                            'showitem' => '--palette--;;filePalette',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_captions_description',
             'exclude' => '1',
@@ -141,6 +156,13 @@ call_user_func(function () {
                 'allowed' => ['mp4'],
                 'maxitems' => '1',
                 'minitems' => '1',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_VIDEO => [
+                            'showitem' => '--palette--;;filePalette',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_mp4_description',
             'exclude' => '1',
@@ -163,9 +185,16 @@ call_user_func(function () {
         'tx_a11ymevideo_posterimg' => [
             'config' => [
                 'type' => 'file',
-                'allowed' => ['jpg', 'jpeg', 'png', 'gif'],
+                'allowed' => 'common-image-types',
                 'maxitems' => '1',
                 'minitems' => '0',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_IMAGE => [
+                            'showitem' => '--palette--;;filePalette,crop',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_posterimg_description',
             'exclude' => '1',
@@ -177,6 +206,13 @@ call_user_func(function () {
                 'allowed' => ['mp4'],
                 'maxitems' => '1',
                 'minitems' => '0',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_VIDEO => [
+                            'showitem' => '--palette--;;filePalette',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguage_description',
             'exclude' => '1',
@@ -188,6 +224,13 @@ call_user_func(function () {
                 'allowed' => ['webm'],
                 'maxitems' => '1',
                 'minitems' => '0',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_VIDEO => [
+                            'showitem' => '--palette--;;filePalette',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_signlanguage_webm_description',
             'exclude' => '1',
@@ -298,6 +341,13 @@ call_user_func(function () {
                 'allowed' => ['webm'],
                 'maxitems' => '1',
                 'minitems' => '0',
+                'overrideChildTca' => [
+                    'types' => [
+                        File::FILETYPE_VIDEO => [
+                            'showitem' => '--palette--;;filePalette',
+                        ],
+                    ],
+                ],
             ],
             'description' => $llFile . 'tt_content.tx_a11ymevideo_webm_description',
             'exclude' => '1',
@@ -425,6 +475,6 @@ call_user_func(function () {
     ExtensionManagementUtility::addStaticFile(
         'a11y_me_video',
         'Configuration/TypoScript/',
-        'a11y_me_video'
+        'Accessible Video Player'
     );
 });

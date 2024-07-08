@@ -51,7 +51,7 @@ The extension requires some TypoScript code, which must be integrated.
 
 #. Press the **Edit the whole template record** button and switch to the tab **Advanced Options**.
 
-#. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **a11y_me_video** to **Selected Items**.
+#. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **Accessible Video Player** to **Selected Items**.
 
 #. For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
 

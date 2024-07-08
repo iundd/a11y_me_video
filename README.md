@@ -81,7 +81,7 @@ The extension requires some TypoScript code, which must be integrated.
 1. Switch to the root page of your site.
 2. Switch to the **TypoScript module** and select the **TypoScript record**.
 3. Press the **Edit the whole template record** button and switch to the tab **Advanced Options**.
-4. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **a11y_me_video** to **Selected Items**.
+4. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **Accessible Video Player** to **Selected Items**.
 5. For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
 
 ![screen shot of including static TypeScript!](Documentation/Images/TemplateInclude.png)
