@@ -1,6 +1,6 @@
 {
     "name": "iundd/a11y-me-video",
-    "description": "Accessible video player based on MediaElement.js, A11y Plugin and Fluid. The new content elements support mp4, webm, subtitles, sign language video, audio description, poster image, text alternative, etc.",
+    "description": "Accessible video player based on MediaElement.js, A11y Plugin and Fluid. The new content elements support mp4, webm, subtitles, sign language video, audio description, poster image and text alternative. Please support accessibility for all.",
     "type": "typo3-cms-extension",
     "keywords": [
         "TYPO3 CMS",
@@ -9,7 +9,7 @@
         "Accessibility",
         "Content Elements"
     ],
-    "version": "2.0.2",
+    "version": "3.0.0",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -18,32 +18,35 @@
             "role": "Developer"
         },
         {
-            "name": "Kallol Chakraborty",
-            "email": "kchakraborty@learntube.de",
+            "name": "Christian Seyfferth",
+            "email": "c.seyffert@dreistrom.land",
             "role": "Developer"
         },
         {
-            "name": "Christian Seyfferth",
-            "email": "c.seyffert@dreistrom.land",
+            "name": "Kallol Chakraborty",
+            "email": "kchakraborty@learntube.de",
             "role": "Developer"
         }
     ],
     "require": {
-        "typo3/cms-backend": "^12.4",
-        "typo3/cms-core": "^12.4",
-        "typo3/cms-extbase": "^12.4",
-        "typo3/cms-fluid": "^12.4",
-        "typo3/cms-frontend": "^12.4",
-        "typo3/cms-filelist": "^12.4",
-        "typo3/cms-fluid-styled-content": "^12.4"
+        "typo3/cms-backend": "^12.4 || ^13.2",
+        "typo3/cms-core": "^12.4 || ^13.2",
+        "typo3/cms-extbase": "^12.4 || ^13.2",
+        "typo3/cms-fluid": "^12.4 || ^13.2",
+        "typo3/cms-frontend": "^12.4 || ^13.2",
+        "typo3/cms-filelist": "^12.4 || ^13.2",
+        "typo3/cms-fluid-styled-content": "^12.4 || ^13.2",
+        "typo3/cms-rte-ckeditor": "^12.4 || ^13.2"
     },
     "require-dev": {
-        "typo3/cms-composer-installers": "^3.1.3 || 4.0.0-RC1 || ^5.0",
+        "typo3/cms-composer-installers": "^5.0",
         "typo3/coding-standards": "^0.5.5",
-        "friendsofphp/php-cs-fixer": "^3.34.1",
-        "saschaegerer/phpstan-typo3": "^1.9",
+        "friendsofphp/php-cs-fixer": "^3.59.3",
+        "saschaegerer/phpstan-typo3": "^1.10.1",
         "typo3/cms-tstemplate": "^12.4",
-        "typo3/cms-install": "^12.4"
+        "typo3/cms-install": "^12.4",
+        "typo3/cms-lowlevel": "^12.4",
+        "typo3/cms-setup": "^12.4"
     },
     "replace": {
         "typo3-ter/a11y-me-video": "self.version"

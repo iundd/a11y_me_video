@@ -43,18 +43,17 @@ Download from extensions.typo3.org
 Preparation: Include static TypoScript
 ======================================
 
-The extension ships some TypoScript code which needs to be included.
+The extension requires some TypoScript code, which must be integrated.
 
 #. Switch to the root page of your site.
 
-#. Switch to the **Template module** and select *Info/Modify*.
+#. Switch to the **TypoScript module** and select the **TypoScript record**.
 
-#. Press the link **Edit the whole template record** and switch to the tab *Includes*.
+#. Press the **Edit the whole template record** button and switch to the tab **Advanced Options**.
 
-#. Select **a11y_video_player** at the field *Include static (from extensions):*
+#. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **Accessible Video Player** to **Selected Items**.
 
-   For some css classes to work, you also need to select
-   **Fluid Content Elements CSS (optional)**
+#. For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
 
 .. figure:: ../../Images/TemplateInclude.png
    :width: 820

@@ -145,6 +145,9 @@
       <trans-unit id="tt_content.tx_a11ymevideo_videooptions.I.0">
         <source>Add links for video download</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videooptions.I.1">
+        <source>Always open control bar (recommended)</source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.0">
         <source>left</source>
       </trans-unit>

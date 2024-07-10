@@ -191,6 +191,10 @@
         <source>Add links for video download</source>
         <target>Video-Download-Links hinzufügen</target>
       </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_videooptions.I.1">
+        <source>Always open control bar (recommended)</source>
+        <target>Immer geöffnete Kontrollleiste (empfohlen)</target>
+      </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_videoposition.I.0">
         <source>left</source>
         <target>links</target>

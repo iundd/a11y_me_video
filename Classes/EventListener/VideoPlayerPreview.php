@@ -6,7 +6,6 @@ use TYPO3\CMS\Backend\Form\Exception;
 use TYPO3\CMS\Backend\Form\FormDataCompiler;
 use TYPO3\CMS\Backend\Form\FormDataGroup\TcaDatabaseRecord;
 use TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent;
-use TYPO3\CMS\Backend\View\PageLayoutView;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 
@@ -36,14 +35,15 @@ class VideoPlayerPreview
         }
 
         $formDataGroup = GeneralUtility::makeInstance(TcaDatabaseRecord::class);
-        $formDataCompiler = GeneralUtility::makeInstance(FormDataCompiler::class, $formDataGroup);
+        $formDataCompiler = GeneralUtility::makeInstance(FormDataCompiler::class);
         $formDataCompilerInput = [
             'command' => 'edit',
             'tableName' => 'tt_content',
             'vanillaUid' => (int)$row['uid'],
+            'request' => $GLOBALS['TYPO3_REQUEST'],
         ];
         try {
-            $result = $formDataCompiler->compile($formDataCompilerInput);
+            $result = $formDataCompiler->compile($formDataCompilerInput, $formDataGroup);
             $processedRow = $this->getProcessedData($result['databaseRow'], $result['processedTca']['columns']);
 
             $this->configureView($result['pageTsConfig'], $row['CType']);
@@ -115,13 +115,14 @@ class VideoPlayerPreview
             foreach ($config['children'] as $child) {
                 if (!$child['isInlineChildExpanded']) {
                     $formDataGroup = GeneralUtility::makeInstance(TcaDatabaseRecord::class);
-                    $formDataCompiler = GeneralUtility::makeInstance(FormDataCompiler::class, $formDataGroup);
+                    $formDataCompiler = GeneralUtility::makeInstance(FormDataCompiler::class);
                     $formDataCompilerInput = [
                         'command' => 'edit',
                         'tableName' => $child['tableName'],
                         'vanillaUid' => $child['vanillaUid'],
+                        'request' => $GLOBALS['TYPO3_REQUEST'],
                     ];
-                    $child = $formDataCompiler->compile($formDataCompilerInput);
+                    $child = $formDataCompiler->compile($formDataCompilerInput, $formDataGroup);
                 }
                 $processedRow[$field][] = $this->getProcessedData($child['databaseRow'], $child['processedTca']['columns']);
             }

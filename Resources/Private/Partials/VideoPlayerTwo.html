@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<div class="a11y-me-videoplayer">
-    <video controls playsinline  width="1180" height="664" preload="metadata" lang="{langCode}"
-        <f:if condition="{data_tx_a11ymevideo_posterimg}">poster="{data_tx_a11ymevideo_posterimg.0.publicUrl}"</f:if>
+<div class="a11y-me-videoplayer{f:if(condition: '{data.tx_a11ymevideo_videooptions}==2 || {data.tx_a11ymevideo_videooptions}==3', then: ' active-controls')}">
+    <video controls playsinline width="1180" height="664" preload="metadata" lang="{langCode}"
+        <f:if condition="{data_tx_a11ymevideo_posterimg.0}">poster="{f:uri.image(image:'{data_tx_a11ymevideo_posterimg.0}', maxWidth: '960')}"</f:if>
         <f:if condition="{data.tx_a11ymevideo_signlanguagelink}">
             <f:variable name="signlanguage" value="{f:uri.typolink(parameter:'{data.tx_a11ymevideo_signlanguagelink}')}" />
             <f:if condition="{data.tx_a11ymevideo_signlanguagelink_webm}">
@@ -34,7 +34,7 @@
     </video>
 </div>
 
-<f:if condition="{data.tx_a11ymevideo_fulltextalternative} || ({data.tx_a11ymevideo_videooptions}==1)">
+<f:if condition="{data.tx_a11ymevideo_fulltextalternative} || {data.tx_a11ymevideo_videooptions}==1 || {data.tx_a11ymevideo_videooptions}==3">
     <ul class="a11y-me-linklist">
         <f:if condition="{data.tx_a11ymevideo_fulltextalternative}">
             <li>
@@ -43,7 +43,7 @@
                 </f:link.typolink>
             </li>
         </f:if>
-        <f:if condition="{data.tx_a11ymevideo_videooptions}==1">
+        <f:if condition="{data.tx_a11ymevideo_videooptions}==1 || {data.tx_a11ymevideo_videooptions}==3">
             <f:if condition="{data.tx_a11ymevideo_mp4link}">
                 <li>
                     <f:link.typolink parameter="{data.tx_a11ymevideo_mp4link}">

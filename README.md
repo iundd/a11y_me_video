@@ -31,11 +31,11 @@
 
 ----
 
-|                 | URL                                                     |
-|-----------------|---------------------------------------------------------|
-| **Repository**  | https://github.com/iundd/a11y_me_video                  |
-| **Read online** | https://docs.typo3.org/p/iundd/a11y-me-video/1.0/en-us/ |
-| **TER**         | https://extensions.typo3.org/extension/a11y_me_video    |
+|                 | URL                                                       |
+|-----------------|-----------------------------------------------------------|
+| **Repository**  | https://github.com/iundd/a11y_me_video                    |
+| **Read online** | https://docs.typo3.org/p/iundd/a11y-me-video/main/en-us/  |
+| **TER**         | https://extensions.typo3.org/extension/a11y_me_video      |
 
 ## Installation
 
@@ -76,17 +76,13 @@ git clone https://github.com/iundd/a11y_me_video.git
 
 ### Preparation: Include static TypoScript
 
-The extension ships some TypoScript code which needs to be included.
+The extension requires some TypoScript code, which must be integrated.
 
 1. Switch to the root page of your site.
-
-2. Switch to the **Template module** and select *Info/Modify*.
-
-3. Press the link **Edit the whole template record** and switch to the tab *Includes*.
-
-4. Select **a11y_video_player** at the field *Include static (from extensions):*
-   
-   For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
+2. Switch to the **TypoScript module** and select the **TypoScript record**.
+3. Press the **Edit the whole template record** button and switch to the tab **Advanced Options**.
+4. Go to **Include TypoScript sets**. Add **Fluid Content Elements** and **Accessible Video Player** to **Selected Items**.
+5. For some css classes to work, you also need to select **Fluid Content Elements CSS (optional)**
 
 ![screen shot of including static TypeScript!](Documentation/Images/TemplateInclude.png)
 
@@ -101,7 +97,7 @@ This project uses [semantic versioning](https://semver.org) which means that
 *  **major updates** (e.g. 1.0.0 => 2.0.0) contain breaking changes which can be
    refactorings, features or bugfixes.
 
-
+Textalternative
 
 ## Configuration und Customisation
 
@@ -283,6 +279,9 @@ Here you can specify alternatives to the main video. Use it to improve accessibi
     be used to describe additional important visual information for blind and visually impaired people.
 * Text alternative
   * Link to a page with text alternative.
+* Options
+  * Add links for video download
+  * Always show control bar (recommended)
 
 ![screen shot of tab accessibility and alternatives!](Documentation/Images/VideoPlayerTabAccessibility.png)
 
@@ -324,22 +323,22 @@ standard content elements e.g. *Text & Media*.
 ### Tab Main Video
 
 * Language (controls, subtitles)
-    * Select the language of the controls and the subtitles file (if available) of the video player here.
+  * Select the language of the controls and the subtitles file (if available) of the video player here.
+    
+    The *Default* setting means that the settings on the page are used automatically.
 
-      The *Default* setting means that the settings on the page are used automatically.
-
-      You can choose another language from the list. Only the languages in the list are supported.
+    You can choose another language from the list. Only the languages in the list are supported.
 * Video position
-    * Set the position of the video relative to the optional text. (left, right, below, above)
+  * Set the position of the video relative to the optional text. (left, right, below, above)
 * Video width
-    * The video can take up 50% or 100% of the available container width.
+  * The video can take up 50% or 100% of the available container width.
 * Poster image
-    * Please provide a poster image. (e.g. a good video snapshot with the same aspect ratio 16:9)
+  * Please provide a poster image. (e.g. a good video snapshot with the same aspect ratio 16:9)
 * Main video | mp4
-    * Please use the codec H.264 for the mp4 video. All current web browsers can play this.
-      This video is therefore mandatory.
+  * Please use the codec H.264 for the mp4 video. All current web browsers can play this.
+    This video is therefore mandatory.
 * Main video | webm
-    * Video in additional alternative video format. (optional)
+  * Video in additional alternative video format. (optional)
 
 ![screen shot of tab main video!](Documentation/Images/VideoPlayer2TabMainVideo.png)
 
@@ -348,22 +347,25 @@ standard content elements e.g. *Text & Media*.
 Here you can specify alternatives to the main video. Use it to improve accessibility.
 
 * Video with sign language | mp4
-    * Synchronous video with sign language.
+  * Synchronous video with sign language.
 
-      A typical sign language video shows the original video in the background and the sign language interpreter in the foreground.
+    A typical sign language video shows the original video in the background and the sign language interpreter in the foreground.
 
-      Note: If the sign language video is the main video, then please use the Main Video tab for the sign language video.
+    Note: If the sign language video is the main video, then please use the Main Video tab for the sign language video.
 * Video with sign language | webm
-    * Video in additional alternative video format (optional)
+  * Video in additional alternative video format (optional)
 
-      Note: This video will be ignored if you don't specify a mp4 video.
+    Note: This video will be ignored if you don't specify a mp4 video.
 * Audio description | mp3
-    * Audio file in mp3 format. Used as an alternative audio track.
+  * Audio file in mp3 format. Used as an alternative audio track.
 
-      The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can
-      be used to describe additional important visual information for blind and visually impaired people.
+    The audio track contains the original sound and additional text spoken by a narrator. Speech and audio gaps can
+    be used to describe additional important visual information for blind and visually impaired people.
 * Text alternative
   * Link to a page with text alternative.
+* Options
+  * Add links for video download
+  * Always show control bar (recommended)
 
 ![screen shot of tab accessibility and alternatives!](Documentation/Images/VideoPlayer2TabAccessibility.png)
 
@@ -387,7 +389,10 @@ All settings are optional.
 
 ## Examples File
 
-Here you will find a few test files that you can use to test and better understand the function of the player.
+**Sorry. The old example files no longer exist. For a better understanding of the content requirements for the media files, you will find
+a similar video player on the following website:**
+
+https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreie-videos-fuer-alle.
 
 The main video, the sign language video and the mp3 file with audio description must be in sync.
 This means that they all have the same timeline, so that you can easily switch between them at any time.
@@ -398,28 +403,6 @@ in the foreground.
 The audio description is used as an alternative audio track. The audio track contains the original sound and additional 
 text spoken by a narrator. Speech and audio gaps can be used to describe additional important visual information
 for blind and visually impaired people.
-
-**Warning**: Please use the files only for testing and not for publishing on your website.
-We have taken the following url addresses from the a11y-plugin's demo code and can therefore not provide any information
-about the copyright (https://github.com/mediaelement/mediaelement-plugins/blob/master/demo/a11y.html).
-Use at your own risk.
-
-----
-
-* Main video | mp4
-  * https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_video.mp4
-* Main video | webm
-  * https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_video.webm
-* Subtitles file | vtt:
-  * https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel.vtt
-  
-  * **Note:** Due to server policy, this URL cannot be used directly. Save the file on your web server and integrate it locally.
-* Video with sign language | mp4:
-  * https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel_signlanguageVideo.mp4
-* Video with sign language | webm:
-  * https://video.aktion-mensch.de/magnolia/aktion-mensch-videoplayer/aktion-mensch_beispiel/aktion-mensch_beispiel_signlanguageVideo.webm
-* Audio description | mp3:
-  * https://video.aktion-mensch.de/magnolia/aktion-mensch_beispiel_audioDescription.mp3
 
 ## MediaElement.Js
 
